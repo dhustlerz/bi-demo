@@ -204,6 +204,11 @@ function top_navigation() {
       $output.='<li class="xn-icon-button">';
           $output.='<a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>';
       $output.='</li>';
+
+      $output.='<li>';
+      $output.='<span class="color-002840 font-family-inherit padding-left-20 font-size-18 line-height-2-5 ">IPF Scheduler</span>';
+      $output.='</li>';
+
       $output.='<!-- END TOGGLE NAVIGATION -->';
 
       $output.='<!-- END SEARCH -->';
@@ -227,25 +232,25 @@ function top_navigation() {
      * START X-NAVIGATION VERTICAL 2
      *
      */
-    $output.='<div class="bg-F5F5F5">';
-      $output.='<ul class=" x-navigation x-navigation-horizontal x-navigation-panel" style="background-color:#F5F5F5">';
-        $output.='<!-- TOGGLE NAVIGATION -->';
+    // $output.='<div class="bg-F5F5F5">';
+    //   $output.='<ul class=" x-navigation x-navigation-horizontal x-navigation-panel" style="background-color:#F5F5F5">';
+    //     $output.='<!-- TOGGLE NAVIGATION -->';
 
-        $output.='<!-- END TOGGLE NAVIGATION -->';
-        $output.='<li >';
-         $output.='<span class="color-002840 font-family-inherit padding-left-40 font-size-20 line-height-2-5 ">IPF Scheduler</span>';
-        $output.='</li>';
+    //     $output.='<!-- END TOGGLE NAVIGATION -->';
+    //     $output.='<li >';
+    //      $output.='<span class="color-002840 font-family-inherit padding-left-40 font-size-20 line-height-2-5 ">IPF Scheduler</span>';
+    //     $output.='</li>';
 
-        $output.='<!-- END SEARCH -->';
+    //     $output.='<!-- END SEARCH -->';
 
-        // $output.='<li class=" pull-right ">';
-        //   $output.='<div id="reportrange" class="reportrange border-radius-6 margin-right-6 color-fff bg-005180 padding-px-5 margin-top-10  ">';
-        //     $output.='<span></span><b class="caret"></b>';
-        //   $output.='</div>';
-        // $output.='</li>';
+    //     // $output.='<li class=" pull-right ">';
+    //     //   $output.='<div id="reportrange" class="reportrange border-radius-6 margin-right-6 color-fff bg-005180 padding-px-5 margin-top-10  ">';
+    //     //     $output.='<span></span><b class="caret"></b>';
+    //     //   $output.='</div>';
+    //     // $output.='</li>';
 
-      $output.='</ul>';
-    $output.='</div>';
+    //   $output.='</ul>';
+    // $output.='</div>';
 
     /*--------------------------------------------------------------------------------------------------------------------------------------*/
     return $output;
