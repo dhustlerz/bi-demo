@@ -1,7 +1,7 @@
 <?php
 
 require_once 'includes/functions-html.php';
-require_once 'sample-tables.inc.php' ;
+require_once 'sample-tables.inc.php';
 
 
 $output = '';
