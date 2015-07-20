@@ -811,11 +811,11 @@ function step3Temp(){
               $output.='<div class=" container margin-top-pt-4 ">';
                 // Date Calender Select
                 $output.='<div class="col-md-6">';
-                  $output.='<div class="col-md-8 border-1-ACAEB1  padding-0">';
+                  $output.='<div class="float-right col-md-8 border-1-ACAEB1  padding-0">';
                     $output.='<div class="datepicker"></div>';
                   $output.='</div>';
                     //Select Time and Duration
-                $output.='<div class="col-md-8 col-xs-12 border-1-ACAEB1  margin-top-pt-4  padding-bottom-24">';
+                $output.='<div class="float-right col-md-8 col-xs-12 border-1-ACAEB1  margin-top-pt-4  padding-bottom-24">';
 
 
                   // Select Time
