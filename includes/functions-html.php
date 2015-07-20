@@ -581,7 +581,7 @@ function selectLocation(){
 
 $output='';
 $output.='<form class="form-horizontal">';
-  $output.='<div class="panel-body">';
+  $output.='<div class="panel-body margin-top-pt-4">';
 
 
       $output.='<div class="form-group">';
@@ -656,7 +656,7 @@ function inviteParticipants(){
 $output='';
 
 $output.='<form class="form-horizontal">';
-  $output.='<div class="panel-body">';
+  $output.='<div class="panel-body margin-top-pt-4">';
 
     $output.='<div id="entry1" class="clonedInput form-group">';
         $output.='<label class="col-md-3 col-xs-12 control-label">Participant Email*</label>';
@@ -685,7 +685,7 @@ function reviewAndSubmit(){
 $output='';
 
 $output.='<form class="form-horizontal">';
-  $output.='<div class="panel-body">';
+  $output.='<div class="container margin-top-pt-4">';
 
     $output.='<div class="form-group">';
         $output.='<div class="col-md-12 col-xs-12">';
@@ -700,7 +700,7 @@ $output.='<form class="form-horizontal">';
             $output.='</div>';
              //$output.='<span class="input-group-addon"><span class="line-height-2 fa fa-edit"></span></span>';
         $output.='</div>';
-        $output.='<span class="font-size-18 col-md-3 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
+        $output.='<span class="font-size-14 col-md-3 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
     $output.='<hr class="width-pt-80">';
@@ -719,7 +719,7 @@ $output.='<form class="form-horizontal">';
             $output.='</div>';
              //$output.='<span class="input-group-addon"><span class="line-height-2 fa fa-edit"></span></span>';
         $output.='</div>';
-        $output.='<span class="font-size-18 col-md-3 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
+        $output.='<span class="font-size-14 col-md-3 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
     $output.='<hr class="width-pt-80">';
@@ -738,7 +738,7 @@ $output.='<form class="form-horizontal">';
             $output.='</div>';
              //$output.='<span class="input-group-addon"><span class="line-height-2 fa fa-edit"></span></span>';
         $output.='</div>';
-        $output.='<span class="font-size-18 col-md-3 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
+        $output.='<span class="font-size-14 col-md-3 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
     $output.='<hr class="width-pt-80">';
@@ -760,7 +760,7 @@ $output.='<form class="form-horizontal">';
             $output.='</div>';
              //$output.='<span class="input-group-addon"><span class="line-height-2 fa fa-edit"></span></span>';
         $output.='</div>';
-        $output.='<span class="font-size-18 col-md-3 col-xs-6"><span class="color-f34662  margin-right-pt-70 float-right line-height-2">edit</span>';
+        $output.='<span class="font-size-14 col-md-3 col-xs-6"><span class="color-f34662  margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
     $output.='<hr class="width-pt-80">';
@@ -779,7 +779,7 @@ $output.='<form class="form-horizontal">';
             $output.='</div>';
              //$output.='<span class="input-group-addon"><span class="line-height-2 fa fa-edit"></span></span>';
         $output.='</div>';
-        $output.='<span class="font-size-18 col-md-3 col-xs-6"><span class="color-f34662  margin-right-pt-70 float-right line-height-2">edit</span>';
+        $output.='<span class="font-size-14 col-md-3 col-xs-6"><span class="color-f34662  margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
     $output.='<hr class="width-pt-80">';

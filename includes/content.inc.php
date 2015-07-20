@@ -21,8 +21,8 @@ $output = '';
      * START BREADCRUMB
      */
     $output.='<ul class="breadcrumb">';
-      $output.='<li><a href="#">Home</a></li>';
-      $output.='<li class="active">IPF Scheduler</li>';
+      // $output.='<li><a href="#">Home</a></li>';
+      // $output.='<li class="active">IPF Scheduler</li>';
     $output.='</ul>';
 /**
  * END BREADCRUMB
