@@ -74,7 +74,7 @@ function educational_gaps(){
 
 function fakeSpeakerList(){
   $output='';
-    $output.='<div class="panel-body ">';
+    $output.='<div class="conatiner">';
       $output.='<table class="table datatable dataTable no-footer">';
          $output.='<thead><tr><th>Sr No.</th><th>Speaker Name</th><th>Select</th></tr></thead>';
           $output.='<tbody class="font-size-12">';
@@ -92,7 +92,7 @@ function fakeSpeakerList(){
 
 function fakeProgramList() {
   $output='';
-    $output.='<div class="panel-body ">';
+    $output.='<div class="container">';
       $output.='<table class="table datatable  ">';
          $output.='<thead><tr><th></th><th>Program Name</th><th>Learning Objective</th><th>Program Type</th><th>Select</th></tr></thead>';
           $output.='<tbody class="font-size-12">';

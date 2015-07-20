@@ -61,6 +61,7 @@ function javascriptLoad() {
     $output.='<script type="text/javascript" src="js/settings.js"></script>';
     $output.='<script type="text/javascript" src="js/plugins.js"></script>';
     $output.='<script type="text/javascript" src="js/actions.js"></script>';
+    $output.='<script type="text/javascript" src="js/add_remove.js"></script>';
     // $output.='<script type="text/javascript" src="js/demo_dashboard.js"></script>';
     $output.='<!--<script type="text/javascript" src="js/custom-charts.js"></script>-->';
     $output.='<!-- END TEMPLATE -->';

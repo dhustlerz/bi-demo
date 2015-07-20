@@ -135,15 +135,15 @@
 }
 
 .border-color-58626E{
-border-color: 58626E;
+border-color: #58626E;
 }
 
 
 /**
  * border solid color
  */
-.border-1-a3bad9 {
-  border: 1px solid #a3bad9;
+.border-1-ACAEB1 {
+  border: 1px solid #ACAEB1;
 }
 .border-1-e7e7e7 {
   border: 1px solid #e7e7e7;
@@ -204,7 +204,15 @@ border-color: 58626E;
 .color-2DAAE1 {
   color: #2DAAE1;
 }
-
+.color-f34662 {
+  color: #f34662 ;
+}
+.color-f34662 {
+  color: #f34662 ;
+}
+.color-85888c {
+  color: #85888c;
+}
 .color-fff {
   color: #fff;
 }
@@ -455,6 +463,9 @@ border-color: 58626E;
 .margin-top-1 {
   margin-top: 1px;
 }
+.margin-top-4 {
+  margin-top: 4px;
+}
 .margin-top-6 {
   margin-top: 6px;
 }
@@ -481,6 +492,9 @@ border-color: 58626E;
   margin-top: 48px;
 }
 
+.margin-bottom-pt-4 {
+  margin-bottom: 4%;
+}
 .margin-bottom-0{
   margin-bottom: 0px;
 }
@@ -552,6 +566,12 @@ border-color: 58626E;
 .padding-top-6 {
   padding-top: 6px;
 }
+.padding-top-8 {
+  padding-top: 8px;
+}
+.padding-top-9 {
+  padding-top: 9px;
+}
 .padding-top-10 {
   padding-top: 10px;
 }
@@ -609,6 +629,9 @@ border-color: 58626E;
 .padding-left-50 {
   padding-left: 50px;
 }
+.padding-left-60 {
+  padding-left: 60px;
+}
 .padding-left-86 {
   padding-left: 86px;
 }
@@ -620,16 +643,21 @@ border-color: 58626E;
 .padding-right-0 {
   padding-right: 0px;
 }
+.padding-right-10 {
+  padding-right: 10px;
+}
 .padding-right-12 {
   padding-right: 12px;
 }
-
 .padding-right-24 {
   padding-right: 24px;
 }
 
 .padding-bottom-10 {
   padding-bottom: 10px;
+}
+.padding-bottom-4 {
+  padding-bottom: 4px;
 }
 .padding-bottom-12 {
   padding-bottom: 12px;
@@ -639,6 +667,9 @@ border-color: 58626E;
 }
 .padding-bottom-48 {
   padding-bottom: 48px;
+}
+.padding-bottom-275 {
+  padding-bottom: 275px;
 }
 .padding-px-5 {
   padding: 5px;
@@ -771,6 +802,10 @@ border-color: 58626E;
   width: 260px;
 }
 
+.list-style-type-none {
+  list-style-type: none;
+}
+
 /**
  * z-index
  */
@@ -828,7 +863,6 @@ border-color: 58626E;
   /* inline-block space fix */
   margin-right:-4px;
 }
-
 
 /* Medium devices (desktops, 992px and up), @screen-md-min */
 @media (min-width: 992px) {
