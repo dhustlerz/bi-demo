@@ -481,10 +481,10 @@ $output='';
 
               $output.='<div class="row">';
                 $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
               $output.='</div>';
 
               $output.=reviewAndSubmit();
+              $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">SEND</button> </div>';
 
               //Step 6 End
             $output.='</div>';
