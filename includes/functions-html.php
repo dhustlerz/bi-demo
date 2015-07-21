@@ -269,7 +269,7 @@ $output='';
   $output.='<div class="row">';
     $output.='<div class="col-md-12">';
 
-      $output.='<div class="panel panel-default">';
+      $output.='<div class="panel">';
         $output.='<div class="panel-body min-heigth-800">';
           //$output.='<h3>Default Wizard</h3>';
           $output.='<div class="wizard">';
@@ -318,6 +318,7 @@ $output='';
               $output.='</li>';
 
             $output.='</ul>';
+
             $output.='<div id="step-1">';
 
               $output.='<h4 class="font-size-18"></h4>';
@@ -331,7 +332,7 @@ $output='';
                   //       $output.='<li><a href="#">Non Accredited</a></li>';
                   //   $output.='</ul>';
                   // $output.='</div>';
-
+                $output.='<hr>';
                   $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
               $output.='</div>';
 
@@ -364,6 +365,7 @@ $output='';
 
 
                $output.='<div class="row">';
+               $output.='<hr>';
                  $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
                   // $output.='<div class="col-md-6 col-xs-6 btn-group">';
                   //   $output.='<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Available <span class="caret"></span></a>';
@@ -381,13 +383,11 @@ $output='';
 
              // $output.='<div class=" panel-header">Business Unit Performance </div>';
               $output.='<div class="row margin-top-pt-4">';
-              $output.='<div class="panel">';
-                $output.='<div class="panel-body">';
+
                   $output.=fakeSpeakerList();
                 $output.='</div>';
               $output.='</div>';
-              $output.='</div>';
-            $output.='</div>';
+
             $output.='<div id="step-3">';
                //Step 3 starts
             $output.= step3Temp();
@@ -457,7 +457,7 @@ $output='';
               // $output.='<p class="font-size-14">All Accredited and Non Accredited Programs are listed below.
               // Use the program filter to find your program faster.
               // To view the learning objective tap on the + icon.Tap on the schedule button to make your selection </p>';
-
+              $output.='<hr>';
               $output.='<div class="row">';
                 $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
                 $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
@@ -479,7 +479,7 @@ $output='';
               // $output.='<p class="font-size-14">All Accredited and Non Accredited Programs are listed below.
               // Use the program filter to find your program faster.
               // To view the learning objective tap on the + icon.Tap on the schedule button to make your selection </p>';
-
+              $output.='<hr>';
               $output.='<div class="row">';
                 $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
                 $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
@@ -812,7 +812,7 @@ function step3Temp(){
   $output = '';
 
 
-
+  $output.='<hr>';
   $output.='<div class="row ">';
     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';

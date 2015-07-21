@@ -7606,7 +7606,7 @@ li.ext_zip {
 }
 
 .action-btn-wizard-previous, .action-btn-wizard-next{
-
+  border-radius: 0px;
   background-color: #F34662;
   /*margin-right: 20;*/
   border-color: #F34662;
