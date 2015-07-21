@@ -602,8 +602,8 @@ $output='';
 
       $output.='<div class="form-group">';
 
-       $output.='<label class="col-md-3 col-xs-12 control-label control-label-extent">Venue</label>';
-          $output.='<div class="col-md-6 col-xs-12">';
+       $output.='<label class="col-md-2 col-xs-12 control-label control-label-extent">Venue</label>';
+          $output.='<div class="col-md-9 col-xs-12">';
                $output.='<span href="#" data-toggle="dropdown" class="form-control dropdown-toggle">Hospital<span class="caret"></span></span>';
                       $output.='<ul class="dropdown-menu" role="menu">';
                           $output.='<li><a href="#">Hospital</a></li>';
@@ -618,8 +618,8 @@ $output='';
       $output.='</div>';
 
          $output.='<div class="form-group">';
-          $output.='<label class="col-md-3 col-xs-12 control-label">City</label>';
-          $output.='<div class="col-md-6 col-xs-12">';
+          $output.='<label class="col-md-2 col-xs-12 control-label">City</label>';
+          $output.='<div class="col-md-9 col-xs-12">';
               // $output.='<div class="input-group">';
                   // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
                   $output.='<input type="text" class="form-control"/>';
@@ -629,8 +629,8 @@ $output='';
       $output.='</div>';
 
          $output.='<div class="form-group">';
-          $output.='<label class="col-md-3 col-xs-12 control-label">Province</label>';
-          $output.='<div class="col-md-6 col-xs-12">';
+          $output.='<label class="col-md-2 col-xs-12 control-label">Province</label>';
+          $output.='<div class="col-md-9 col-xs-12">';
               // $output.='<div class="input-group">';
                   // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
                   $output.='<input type="text" class="form-control"/>';
@@ -640,8 +640,8 @@ $output='';
       $output.='</div>';
 
          $output.='<div class="form-group">';
-          $output.='<label class="col-md-3 col-xs-12 control-label">Address</label>';
-          $output.='<div class="col-md-6 col-xs-12">';
+          $output.='<label class="col-md-2 col-xs-12 control-label">Address</label>';
+          $output.='<div class="col-md-9 col-xs-12">';
               // $output.='<div class="input-group">';
                   // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
                   $output.='<input type="text" class="form-control"/>';
@@ -651,8 +651,8 @@ $output='';
       $output.='</div>';
 
       $output.='<div class="form-group">';
-          $output.='<label class="col-md-3 col-xs-12 control-label">Postal Code*</label>';
-          $output.='<div class="col-md-6 col-xs-12">';
+          $output.='<label class="col-md-2 col-xs-12 control-label">Postal Code*</label>';
+          $output.='<div class="col-md-9 col-xs-12">';
               // $output.='<div class="input-group">';
                   // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
                   $output.='<input type="text" class="form-control"/>';
