@@ -278,42 +278,42 @@ $output='';
               $output.='<li>';
                 $output.='<a href="#step-1">';
                   $output.='<span class="stepNumber">1</span>';
-                  $output.='<span class="stepDesc">Choose Programs<br /><small></small></span>';
+                  $output.='<span class="stepDesc">Programs<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
               $output.='<li>';
                 $output.='<a href="#step-2">';
                   $output.='<span class="stepNumber">2</span>';
-                  $output.='<span class="stepDesc">Select Speaker<br /><small></small></span>';
+                  $output.='<span class="stepDesc">Speaker<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
               $output.='<li>';
                 $output.='<a href="#step-3">';
                   $output.='<span class="stepNumber">3</span>';
-                  $output.='<span class="stepDesc">Select Date & time<br /><small></small></span>';
+                  $output.='<span class="stepDesc">Date & time<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
               $output.='<li>';
                 $output.='<a href="#step-4">';
                   $output.='<span class="stepNumber">4</span>';
-                  $output.='<span class="stepDesc">Select Location<br /><small></small></span>';
+                  $output.='<span class="stepDesc">Location<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
               $output.='<li>';
               $output.='<a href="#step-5">';
                   $output.='<span class="stepNumber">5</span>';
-                  $output.='<span class="stepDesc">Invite Participants<br /><small></small></span>';
+                  $output.='<span class="stepDesc">Participants<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
               $output.='<li>';
               $output.='<a href="#step-6">';
                   $output.='<span class="stepNumber">6</span>';
-                  $output.='<span class="stepDesc">Review & Submit<br /><small></small></span>';
+                  $output.='<span class="stepDesc">Submit<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
@@ -378,7 +378,7 @@ $output='';
               $output.='</div>';
 
               //Step 2 End
-              $output.='<div class="container margin-top-pt-4">';
+              $output.='<div class="row margin-top-pt-4">';
                 $output.=fakeSpeakerList();
               $output.='</div>';
             $output.='</div>';
@@ -799,88 +799,88 @@ return $output;
 }
 function step3Temp(){
 
-    $output = '';
+  $output = '';
 
 
 
-              $output.='<div class="row ">';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
-              $output.='</div>';
+  $output.='<div class="row ">';
+    $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
+    $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
+  $output.='</div>';
 
-              $output.='<div class=" container margin-top-pt-4 ">';
-                // Date Calender Select
-                $output.='<div class="col-md-6">';
-                  $output.='<div class="float-right col-md-8 border-1-ACAEB1  padding-0">';
-                    $output.='<div class="datepicker"></div>';
-                  $output.='</div>';
-                    //Select Time and Duration
-                $output.='<div class="float-right col-md-8 col-xs-12 border-1-ACAEB1  margin-top-pt-4  padding-bottom-24">';
+  $output.='<div class=" container margin-top-pt-4 ">';
+    // Date Calender Select
+    $output.='<div class="col-md-6">';
 
+      $output.='<div class="float-right col-md-8 border-1-ACAEB1  padding-0">';
+        $output.='<div class="datepicker"></div>';
+      $output.='</div>';
+        //Select Time and Duration
+      $output.='<div class="float-right col-md-8 col-xs-12 border-1-ACAEB1  margin-top-pt-4  padding-bottom-24">';
 
-                  // Select Time
-                  $output.='<div class="row margin-top-24">';
-                    $output.='<div class="col-md-5 col-xs-5">';
-                      $output.='<div  class="button-F34662 btn ">Start Time </div>';
-                    $output.='</div>';
+        // Select Time
+        $output.='<div class="row margin-top-24">';
+          $output.='<div class="col-md-5 col-xs-5">';
+            $output.='<div  class="button-F34662 btn ">Start Time </div>';
+          $output.='</div>';
 
-                    $output.='<div class="col-md-4 col-xs-4">';
-                        $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:90px">Time <span class="caret"></span></a>';
-                        $output.= selectTime();
-                    $output.='</div>';
+          $output.='<div class="col-md-4 col-xs-4">';
+              $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:90px">Time <span class="caret"></span></a>';
+              $output.= selectTime();
+          $output.='</div>';
 
-                    $output.='<div class="col-md-2 col-xs-2 padding-0">';
+          $output.='<div class="col-md-2 col-xs-2 padding-0">';
 
-                        $output.='<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">AM <span class="caret"></span></a>';
-                        $output.='<ul class="dropdown-menu" role="menu">';
-                          $output.='<li><a href="#">AM</a></li>';
-                          $output.='<li><a href="#">PM</a></li>';
-                        $output.='</ul>';
+              $output.='<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">AM <span class="caret"></span></a>';
+              $output.='<ul class="dropdown-menu" role="menu">';
+                $output.='<li><a href="#">AM</a></li>';
+                $output.='<li><a href="#">PM</a></li>';
+              $output.='</ul>';
 
-                    $output.='</div>';
+        $output.='</div>';
 
-                  $output.='</div>';
-                  // Select time Ends
+    $output.='</div>';
+      // Select time Ends
 
-                  // Select duration
-                  $output.='<div class="row margin-top-24">';
-                    $output.='<div class="col-md-5 col-xs-5">';
-                     $output.='<div  class="button-F34662 btn ">Duration</div>';
-                    $output.='</div>';
+      // Select duration
+      $output.='<div class="row margin-top-24">';
+        $output.='<div class="col-md-5 col-xs-5">';
+         $output.='<div  class="button-F34662 btn ">Duration</div>';
+        $output.='</div>';
 
-                    $output.='<div class="col-md-6 col-xs-6">';
-                        $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:150px">30 minutes <span class="caret"></span></a>';
-                        $output.= selectDuration();
-                    $output.='</div>';
-                  $output.='</div>';
-                  // Select duration Ends
+        $output.='<div class="col-md-6 col-xs-6">';
+            $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:150px">30 minutes <span class="caret"></span></a>';
+            $output.= selectDuration();
+        $output.='</div>';
+      $output.='</div>';
+      // Select duration Ends
 
-                $output.='</div>';
-                // Select Time and Duration End
-                $output.='</div>';
+    $output.='</div>';
+    // Select Time and Duration End
+    $output.='</div>';
 
-                //Meeting Details Starts
-                $output.='<div class="col-md-6 margin-top-4">';
-                  $output.='<div class="row">';
-                    $output.='<div class="col-md-8" style="background:#0076A3">';
-                      $output.='<h4 class="color-fff font-size-18 padding-top-9 text-center">Selected Date & Times</h4>';
-                    $output.='</div>';
-                  $output.='</div>';
+    //Meeting Details Starts
+    $output.='<div class="col-md-6 margin-top-4">';
+      $output.='<div class="row">';
+        $output.='<div class="col-md-8" style="background:#0076A3">';
+          $output.='<h4 class="color-fff font-size-18 padding-top-9 text-center">Selected Date & Times</h4>';
+        $output.='</div>';
+      $output.='</div>';
 
-                  $output.='<div class="row">';
-                    $output.='<div class="col-md-8 border-1-ACAEB1 padding-bottom-275" style="background:#fff">';
-                      $output.='<h4 class="color-000 font-size-14 margin-top-24 text-center">Meeting Date:</h4>';
-                      $output.='<h4 class="color-000 font-size-14 text-center">Start Time:</h4>';
-                      $output.='<h4 class="color-000 font-size-14 text-center">Meeting Duration:</h4>';
-                    $output.='</div>';
-                  $output.='</div>';
-                $output.='</div>';
-                //Meeting Details End
-
-
+      $output.='<div class="row">';
+        $output.='<div class="col-md-8 border-1-ACAEB1 padding-bottom-275" style="background:#fff">';
+          $output.='<h4 class="color-000 font-size-14 margin-top-24 text-center">Meeting Date:</h4>';
+          $output.='<h4 class="color-000 font-size-14 text-center">Start Time:</h4>';
+          $output.='<h4 class="color-000 font-size-14 text-center">Meeting Duration:</h4>';
+        $output.='</div>';
+      $output.='</div>';
+    $output.='</div>';
+    //Meeting Details End
 
 
-              $output.='</div>';
-              return $output;
+
+
+  $output.='</div>';
+  return $output;
 }
     ?>
