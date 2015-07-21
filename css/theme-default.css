@@ -7676,3 +7676,22 @@ h5{
 @media (max-width: @screen-sm) {
     body{font-size: 14px;}
 }
+
+.panel .form-panel {
+  background-color: #def1ff;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  position: relative;
+  /* margin-left: 2; */
+}
+
+@media (min-width: 768px) and (max-width : 991px){
+.form-horizontal .control-label{
+  padding-top: 7px;
+  margin-bottom: 0;
+  margin-bottom: 10px;
+ text-align: left;
+}
+
+
+}

@@ -378,8 +378,14 @@ $output='';
               $output.='</div>';
 
               //Step 2 End
+
+             // $output.='<div class=" panel-header">Business Unit Performance </div>';
               $output.='<div class="row margin-top-pt-4">';
-                $output.=fakeSpeakerList();
+              $output.='<div class="panel">';
+                $output.='<div class="panel-body">';
+                  $output.=fakeSpeakerList();
+                $output.='</div>';
+              $output.='</div>';
               $output.='</div>';
             $output.='</div>';
             $output.='<div id="step-3">';
@@ -457,7 +463,13 @@ $output='';
                 $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
               $output.='</div>';
 
-              $output.=selectLocation();
+              $output.='<div class="panel margin-top-pt-4">';
+                $output.='<form class="form-horizontal">';
+                $output.='<div class="form-panel panel-body  ">';
+                  $output.=selectLocation();
+                $output.='</div>';
+                $output.='</form>';
+              $output.='</div>';
 
               //Step 4 End
             $output.='</div>';
@@ -585,13 +597,12 @@ return $output;
 function selectLocation(){
 
 $output='';
-$output.='<form class="form-horizontal">';
-  $output.='<div class="panel-body margin-top-pt-4">';
+
 
 
       $output.='<div class="form-group">';
 
-       $output.='<label class="col-md-3 col-xs-12 control-label">Venue</label>';
+       $output.='<label class="col-md-3 col-xs-12 control-label control-label-extent">Venue</label>';
           $output.='<div class="col-md-6 col-xs-12">';
                $output.='<span href="#" data-toggle="dropdown" class="form-control dropdown-toggle">Hospital<span class="caret"></span></span>';
                       $output.='<ul class="dropdown-menu" role="menu">';
@@ -609,10 +620,10 @@ $output.='<form class="form-horizontal">';
          $output.='<div class="form-group">';
           $output.='<label class="col-md-3 col-xs-12 control-label">City</label>';
           $output.='<div class="col-md-6 col-xs-12">';
-              $output.='<div class="input-group">';
-                  $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
+              // $output.='<div class="input-group">';
+                  // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
                   $output.='<input type="text" class="form-control"/>';
-              $output.='</div>';
+              // $output.='</div>';
               $output.='<span class="help-block">example "Toronto"</span>';
           $output.='</div>';
       $output.='</div>';
@@ -620,10 +631,10 @@ $output.='<form class="form-horizontal">';
          $output.='<div class="form-group">';
           $output.='<label class="col-md-3 col-xs-12 control-label">Province</label>';
           $output.='<div class="col-md-6 col-xs-12">';
-              $output.='<div class="input-group">';
-                  $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
+              // $output.='<div class="input-group">';
+                  // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
                   $output.='<input type="text" class="form-control"/>';
-              $output.='</div>';
+              // $output.='</div>';
               $output.='<span class="help-block">Example "Ontario"</span>';
           $output.='</div>';
       $output.='</div>';
@@ -631,10 +642,10 @@ $output.='<form class="form-horizontal">';
          $output.='<div class="form-group">';
           $output.='<label class="col-md-3 col-xs-12 control-label">Address</label>';
           $output.='<div class="col-md-6 col-xs-12">';
-              $output.='<div class="input-group">';
-                  $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
+              // $output.='<div class="input-group">';
+                  // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
                   $output.='<input type="text" class="form-control"/>';
-              $output.='</div>';
+              // $output.='</div>';
               $output.='<span class="help-block">#Unit No, Street Name</span>';
           $output.='</div>';
       $output.='</div>';
@@ -642,16 +653,15 @@ $output.='<form class="form-horizontal">';
       $output.='<div class="form-group">';
           $output.='<label class="col-md-3 col-xs-12 control-label">Postal Code*</label>';
           $output.='<div class="col-md-6 col-xs-12">';
-              $output.='<div class="input-group">';
-                  $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
+              // $output.='<div class="input-group">';
+                  // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
                   $output.='<input type="text" class="form-control"/>';
-              $output.='</div>';
+              // $output.='</div>';
               $output.='<span class="help-block">Example "N9C1A5"</span>';
           $output.='</div>';
       $output.='</div>';
 
-  $output.='</div>';
-$output.='</form>';
+
 
 return $output;
 }
