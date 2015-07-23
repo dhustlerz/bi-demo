@@ -121,7 +121,7 @@ $(function() {
                     }else
                         var dt = 'add a tag';
 
-                    $(this).tagsInput({width: '100%',height:'auto',defaultText: dt});
+                    $(this).tagsInput({width: '100%',height:'auto',defaultText: 'add more'});
                 });
 
             }
@@ -167,7 +167,7 @@ $(function() {
         //Datatables
         var uiDatatable = function(){
             if($(".datatable").length > 0){
-                $(".datatable").dataTable({"ordering": false, "info": false,"bPaginate": false,});
+                $(".datatable").dataTable({"ordering": false, "info": false,"bPaginate": false,"searching": false});
                 $(".datatable").on('page.dt',function () {
                     onresize(100);
                 });

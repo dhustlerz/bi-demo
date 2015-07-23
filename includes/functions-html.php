@@ -265,15 +265,17 @@ function wizard(){
 
 $output='';
 
+//row
+  $output.='<div class="">';
+  //col-md-12
+    $output.='<div class="">';
+    //panel
+      $output.='<div class="">';
 
-  $output.='<div class="row">';
-    $output.='<div class="col-md-12">';
-
-      $output.='<div class="panel">';
-        $output.='<div class="panel-body min-heigth-800">';
+        $output.='<div class=" min-heigth-800">';
           //$output.='<h3>Default Wizard</h3>';
           $output.='<div class="wizard">';
-            $output.='<ul>';
+            $output.='<ul class="bg-0076A3" style="padding-bottom:0px; padding-left:4%; padding-right:0px; padding-top:9px;">';
 
               $output.='<li>';
                 $output.='<a href="#step-1">';
@@ -292,219 +294,236 @@ $output='';
               $output.='<li>';
                 $output.='<a href="#step-3">';
                   $output.='<span class="stepNumber">3</span>';
-                  $output.='<span class="stepDesc">Date & time<br /><small></small></span>';
+                  $output.='<span class="stepDesc">Date & Time<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
               $output.='<li>';
                 $output.='<a href="#step-4">';
                   $output.='<span class="stepNumber">4</span>';
-                  $output.='<span class="stepDesc">Location<br /><small></small></span>';
+                  $output.='<span class="stepDesc">Details<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
-              $output.='<li>';
-              $output.='<a href="#step-5">';
-                  $output.='<span class="stepNumber">5</span>';
-                  $output.='<span class="stepDesc">Participants<br /><small></small></span>';
-                $output.='</a>';
-              $output.='</li>';
+              // $output.='<li>';
+              // $output.='<a href="#step-5">';
+              //     $output.='<span class="stepNumber">5</span>';
+              //     $output.='<span class="stepDesc text-center">Participants<br /><small></small></span>';
+              //   $output.='</a>';
+              // $output.='</li>';
 
               $output.='<li>';
-              $output.='<a href="#step-6">';
+              $output.='<a  href="#step-5">';
                   $output.='<span class="stepNumber">6</span>';
-                  $output.='<span class="stepDesc">Submit<br /><small></small></span>';
+                  $output.='<span class="stepDesc" >Submit<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
             $output.='</ul>';
 
             $output.='<div id="step-1">';
+            //Step 2 Starts
+              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
+                $output.='<h4 class="font-size-18">Step 1. Select Program</h4>';
+                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+                 Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+                  Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+                   </p>';
+                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+              $output.='</div>';
 
-              $output.='<h4 class="font-size-18"></h4>';
 
               $output.='<div class="row">';
-                  // $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
-                  // $output.='<div class="col-md-6 col-xs-6 btn-group">';
-                  //   $output.='<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Accredited <span class="caret"></span></a>';
-                  //   $output.='<ul class="dropdown-menu" role="menu">';
-                  //       $output.='<li><a href="#">Accredited</a></li>';
-                  //       $output.='<li><a href="#">Non Accredited</a></li>';
-                  //   $output.='</ul>';
-                  // $output.='</div>';
-                $output.='<hr>';
-                  $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
+                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
               $output.='</div>';
 
-                // Program list
 
 
-              // for ($i=1 ; $i <= 10 ; $i++){
+              $output.='<div class="row">';
+                $output.='<div class="padding-20 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 20px solid #F5F5F5;">';
 
+                    $output.= fakeProgramList();
 
-
-                // $output.='<div class="row program-list" style="margin-top: 30px; background-color: #F0F8FF " >';
-
-                // $output.='<div class="col-md-1 col-xs-1 fixed"><i class="fa fa-plus-circle font-size-24 padding-top-4"></i></div>';
-                // $output.='<div class="col-md-10 col-xs-10 fixed padding-top-4 "> Program title and learning objective </div>';
-                // $output.='<div class="col-md-1 col-xs-1 fixed "> <button  type="button" class="actionClick float-right btn btn-primary ">Schedule</button> </div>';
-
-                // $output.='</div>';
-
-              //}
-
-              $output.= fakeProgramList();
-
-            $output.='</div>';
-            $output.='<div id="step-2">';
-              //Step 2 starts
-              $output.='<h4 class="font-size-18"></h4>';
-              // $output.='<p class="font-size-14">All Accredited and Non Accredited Programs are listed below.
-              // Use the program filter to find your program faster.
-              // To view the learning objective tap on the + icon.Tap on the schedule button to make your selection </p>';
-
-
-               $output.='<div class="row">';
-               $output.='<hr>';
-                 $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
-                  // $output.='<div class="col-md-6 col-xs-6 btn-group">';
-                  //   $output.='<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Available <span class="caret"></span></a>';
-                  //   $output.='<ul class="dropdown-menu" role="menu">';
-                  //       $output.='<li><a href="#">Available</a></li>';
-                  //       $output.='<li><a href="#">Not Available</a></li>';
-                  //   $output.='</ul>';
-                  // $output.='</div>';
-
-                  $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
-
-              $output.='</div>';
-
-              //Step 2 End
-
-             // $output.='<div class=" panel-header">Business Unit Performance </div>';
-              $output.='<div class="row margin-top-pt-4">';
-
-                  $output.=fakeSpeakerList();
+                  $output.='</div>';
                 $output.='</div>';
               $output.='</div>';
+
+            $output.='</div>';
+
+
+
+            $output.='<div id="step-2">';
+            //Step 2 Starts
+              $output.='<div class="padding-20 col-md-12 bg-ffffff ">';
+                $output.='<h4 class="font-size-18">Step 2. Select Speaker</h4>';
+                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+                 Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+                  Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+                   </p>';
+                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+              $output.='</div>';
+
+
+              $output.='<div class="row">';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+              $output.='</div>';
+
+
+
+              $output.='<div class="row">';
+                $output.='<div class="padding-20 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 20px solid #F5F5F5;">';
+
+                    $output.= fakeSpeakerList();
+
+                  $output.='</div>';
+                $output.='</div>';
+              $output.='</div>';
+
+            $output.='</div>';
+
+
 
             $output.='<div id="step-3">';
-               //Step 3 starts
-            $output.= step3Temp();
-              $output.='<h4 class="font-size-18"></h4>';
-
-
-              // $output.='<div class="row ">';
-              //   $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
-              //   $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
-              // $output.='</div>';
-
-              // $output.='<div class=" row margin-top-pt-4 ">';
-              //   // Date Calender Select
-              //   $output.='<div class="col-md-6  width-376 col-xs-offset-3">';
-              //     $output.='<div class="datepicker "></div>';
-              //   $output.='</div>';
-
-              //   // Select Time and Duration
-              //   $output.='<div class="col-md-6 container  ">';
-
-
-              //     // Select Time
-              //     $output.='<div class="row ">';
-
-              //       $output.='<div class="col-md-4 col-xs-4 btn-group ">';
-              //         $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Time </a>';
-
-              //       $output.='</div>';
-
-              //       $output.='<div class="col-md-4 col-xs-4 btn-group ">';
-              //         $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Time <span class="caret"></span></a>';
-              //         $output.= selectTime();
-              //       $output.='</div>';
-
-              //       $output.='<div class="col-md-4 col-xs-4 btn-group">';
-              //         $output.='<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">AM <span class="caret"></span></a>';
-              //         $output.='<ul class="dropdown-menu" role="menu">';
-              //             $output.='<li><a href="#">AM</a></li>';
-              //             $output.='<li><a href="#">PM</a></li>';
-              //         $output.='</ul>';
-              //       $output.='</div>';
-
-              //     $output.='</div>';
-              //     // Select time Ends
-
-              //     // Select duration
-              //     $output.='<div class="row margin-top-12">';
-
-              //       $output.='<div class=" col-md-12 col-xs-12 btn-group ">';
-              //         $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Duration <span class="caret"></span></a>';
-              //         $output.= selectDuration();
-              //       $output.='</div>';
-
-              //     $output.='</div>';
-              //     // Select duration Ends
-
-              //   $output.='</div>';
-              //   // Select Time and Duration End
-
-              // $output.='</div>';
-
-              //Step 3 End
-            $output.='</div>';
-            $output.='<div id="step-4">';
-              //Step 4 starts
-              $output.='<h4 class="font-size-18"></h4>';
-              // $output.='<p class="font-size-14">All Accredited and Non Accredited Programs are listed below.
-              // Use the program filter to find your program faster.
-              // To view the learning objective tap on the + icon.Tap on the schedule button to make your selection </p>';
-              $output.='<hr>';
-              $output.='<div class="row">';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
+            //Step 3 Starts
+              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
+                $output.='<h4 class="font-size-18">Step 3. Select Date and Time</h4>';
+                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+                 Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+                  Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+                   </p>';
+                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
 
-              $output.='<div class="panel margin-top-pt-4">';
-                $output.='<form class="form-horizontal">';
-                $output.='<div class="form-panel panel-body  ">';
-                  $output.=selectLocation();
+
+              $output.='<div class="row">';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+              $output.='</div>';
+
+
+
+              $output.='<div class="row">';
+                $output.='<div class="padding-20 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 20px solid #F5F5F5;min-height: 600px;">';
+
+                    $output.= selectDateTime();
+
+                  $output.='</div>';
                 $output.='</div>';
-                $output.='</form>';
+              $output.='</div>';
+             //Step 3 ends
+            $output.='</div>';
+
+            $output.='<div id="step-4">';
+            //Step 4 Starts
+              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
+                $output.='<h4 class="font-size-18">Step 4. Select Location & Add Attendees</h4>';
+                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+                 Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+                  Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+                   </p>';
+                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
 
-              //Step 4 End
+
+              $output.='<div class="row">';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+              $output.='</div>';
+
+
+
+              $output.='<div class="row">';
+                $output.='<div class="padding-20 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 20px solid #F5F5F5; padding: 25px; min-height: 600px;">';
+
+                    $output.='<div class="row">';
+                      $output.='<h4 class="font-size-18" style="  margin: 10px; margin-bottom: 34px; font-weight: 300;">Location Information</h4>';
+                      $output.= selectLocation();
+                    $output.='</div>';
+
+                    $output.='<div class="row">';
+                      $output.='<h4 class="font-size-18" style="  margin: 10px; margin-bottom: 34px; margin-top: 34px; font-weight: 300;">Invite Attendees</h4>';
+                      $output.= inviteParticipants();
+                    $output.='</div>';
+
+                  $output.='</div>';
+
+                $output.='</div>';
+              $output.='</div>';
+            //Step 4 ends
             $output.='</div>';
+
+            // $output.='<div id="step-5">';
+
+            // //Step 5 Starts
+            //   $output.='<div class="padding-20 col-md-12 ">';
+            //     $output.='<h4 class="font-size-18">Step 5. Invite Participants</h4>';
+            //     $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+            //     nteger ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+            //     Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+            //      </p>';
+            //     $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+            //   $output.='</div>';
+
+
+            //   $output.='<div class="row">';
+            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+            //   $output.='</div>';
+
+
+            //   $output.='<div class="row">';
+            //     $output.='<div class="padding-20 col-md-12 ">';
+            //       $output.='<div class="panel" style="border: 20px solid #F5F5F5; padding:25px; padding:25px; /*padding-top: 120;*/ min-height: 600px;">';
+
+            //         $output.= inviteParticipants();
+
+            //       $output.='</div>';
+            //     $output.='</div>';
+            //   $output.='</div>';
+            // //Step 5 Starts
+
+            // $output.='</div>';
+
             $output.='<div id="step-5">';
-              //Step 5 starts
-              $output.='<h4 class="font-size-18"></h4>';
-              // $output.='<p class="font-size-14">All Accredited and Non Accredited Programs are listed below.
-              // Use the program filter to find your program faster.
-              // To view the learning objective tap on the + icon.Tap on the schedule button to make your selection </p>';
-              $output.='<hr>';
-              $output.='<div class="row">';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
+
+            //Step 5 Starts
+              $output.='<div class="padding-20 col-md-12 bg-ffffff ">';
+                $output.='<h4 class="font-size-18">Step 6. Review and Submit</h4>';
+                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+                nteger ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+                Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+                 </p>';
+                $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
 
-              $output.= inviteParticipants();
-
-              //Step 5 End
-            $output.='</div>';
-            $output.='<div id="step-6">';
-              //Step 6 starts
-              $output.='<h4 class="font-size-18"></h4>';
-              // $output.='<p class="font-size-14">All Accredited and Non Accredited Programs are listed below.
-              // Use the program filter to find your program faster.
-              // To view the learning objective tap on the + icon.Tap on the schedule button to make your selection </p>';
 
               $output.='<div class="row">';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
+                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
               $output.='</div>';
 
-              $output.=reviewAndSubmit();
-              $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">SEND</button> </div>';
 
-              //Step 6 End
+              $output.='<div class="row">';
+                $output.='<div class="padding-20 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 20px solid #F5F5F5; ">';
+
+                    $output.= reviewAndSubmit();
+                    $output.='<div class=" margin-bottom-24 col-md-6 col-xs-6"> <button  type="button" style="border-radius:0px;" class= "float-right btn btn-primary ">Submit</span></button> </div>';
+
+
+                  $output.='</div>';
+                $output.='</div>';
+              $output.='</div>';
+            //Step 5 Starts
+
             $output.='</div>';
+
           $output.='</div>';
         $output.='</div>';
       $output.='</div>';
@@ -602,52 +621,52 @@ $output='';
 
       $output.='<div class="form-group">';
 
-       $output.='<label class="col-md-2 col-xs-12 control-label control-label-extent">Venue</label>';
-          $output.='<div class="col-md-9 col-xs-12">';
-               $output.='<span href="#" data-toggle="dropdown" class="form-control dropdown-toggle">Hospital<span class="caret"></span></span>';
-                      $output.='<ul class="dropdown-menu" role="menu">';
-                          $output.='<li><a href="#">Hospital</a></li>';
-                          $output.='<li><a href="#">Medical Clinic</a></li>';
-                          $output.='<li><a href="#">Restaurant</a></li>';
-                          $output.='<li><a href="#">Hotel</a></li>';
-                          $output.='<li><a href="#">Conference Center</a></li>';
-                          $output.='<li><a href="#">Other</a></li>';
-                      $output.='</ul>';
-              $output.='<span class="help-block">Select your Venu</span>';
-          $output.='</div>';
+      $output.='<label class="col-md-2 col-xs-12 control-label control-label-extent">Venue</label>';
+        $output.='<div class="col-md-9 col-xs-12">';
+           $output.='<span href="#" data-toggle="dropdown" class="form-control dropdown-toggle">Hospital<span class="caret"></span></span>';
+                $output.='<ul class="dropdown-menu" role="menu">';
+                  $output.='<li><a href="#">Hospital</a></li>';
+                  $output.='<li><a href="#">Medical Clinic</a></li>';
+                  $output.='<li><a href="#">Restaurant</a></li>';
+                  $output.='<li><a href="#">Hotel</a></li>';
+                  $output.='<li><a href="#">Conference Center</a></li>';
+                  $output.='<li><a href="#">Other</a></li>';
+                $output.='</ul>';
+          $output.='<span class="help-block">Select your Venu</span>';
+        $output.='</div>';
       $output.='</div>';
 
-         $output.='<div class="form-group">';
-          $output.='<label class="col-md-2 col-xs-12 control-label">City</label>';
-          $output.='<div class="col-md-9 col-xs-12">';
-              // $output.='<div class="input-group">';
-                  // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
-                  $output.='<input type="text" class="form-control"/>';
-              // $output.='</div>';
-              $output.='<span class="help-block">example "Toronto"</span>';
-          $output.='</div>';
+      $output.='<div class="form-group">';
+        $output.='<label class="col-md-2 col-xs-12 control-label">City</label>';
+        $output.='<div class="col-md-9 col-xs-12">';
+            // $output.='<div class="input-group">';
+                // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
+                $output.='<input type="text" class="form-control"/>';
+            // $output.='</div>';
+            $output.='<span class="help-block">example "Toronto"</span>';
+        $output.='</div>';
       $output.='</div>';
 
-         $output.='<div class="form-group">';
-          $output.='<label class="col-md-2 col-xs-12 control-label">Province</label>';
-          $output.='<div class="col-md-9 col-xs-12">';
-              // $output.='<div class="input-group">';
-                  // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
-                  $output.='<input type="text" class="form-control"/>';
-              // $output.='</div>';
-              $output.='<span class="help-block">Example "Ontario"</span>';
-          $output.='</div>';
+      $output.='<div class="form-group">';
+        $output.='<label class="col-md-2 col-xs-12 control-label">Province</label>';
+        $output.='<div class="col-md-9 col-xs-12">';
+            // $output.='<div class="input-group">';
+                // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
+                $output.='<input type="text" class="form-control"/>';
+            // $output.='</div>';
+            $output.='<span class="help-block">Example "Ontario"</span>';
+        $output.='</div>';
       $output.='</div>';
 
-         $output.='<div class="form-group">';
-          $output.='<label class="col-md-2 col-xs-12 control-label">Address</label>';
-          $output.='<div class="col-md-9 col-xs-12">';
-              // $output.='<div class="input-group">';
-                  // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
-                  $output.='<input type="text" class="form-control"/>';
-              // $output.='</div>';
-              $output.='<span class="help-block">#Unit No, Street Name</span>';
-          $output.='</div>';
+      $output.='<div class="form-group">';
+        $output.='<label class="col-md-2 col-xs-12 control-label">Address</label>';
+        $output.='<div class="col-md-9 col-xs-12">';
+            // $output.='<div class="input-group">';
+                // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
+                $output.='<input type="text" class="form-control"/>';
+            // $output.='</div>';
+            $output.='<span class="help-block">#Unit No, Street Name</span>';
+        $output.='</div>';
       $output.='</div>';
 
       $output.='<div class="form-group">';
@@ -670,25 +689,38 @@ function inviteParticipants(){
 
 $output='';
 
-$output.='<form class="form-horizontal">';
-  $output.='<div class="panel-body margin-top-pt-4">';
 
-    $output.='<div id="entry1" class="clonedInput form-group">';
-        $output.='<label class="col-md-3 col-xs-12 control-label">Participant Email*</label>';
-        $output.='<div class="col-md-6 col-xs-12">';
-            $output.='<div class="input-group">';
-                $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-envelope-o"></span></span>';
-                $output.='<input type="text" id="participant_email" class="input_fn form-control"/>';
-                $output.='<span id="btnAdd" class="input-group-addon"><span class="line-height-2 fa fa-plus"></span></span>';
-                $output.='<span id="btnDel"  class="input-group-addon"><span disable class="line-height-2 fa fa-minus"></span></span>';
-            $output.='</div>';
-            $output.='<span class="help-block">Example "abc@domain.com"</span>';
-        $output.='</div>';
+  //$output.='<div class="panel-body margin-top-pt-4">';
+
+    // $output.='<div id="entry1" class="clonedInput form-group">';
+    //     $output.='<label class="col-md-3 col-xs-12 control-label">Participant Email*</label>';
+    //     $output.='<div class="col-md-6 col-xs-12">';
+    //         $output.='<div class="input-group">';
+    //             $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-envelope-o"></span></span>';
+    //             //$output.='<input type="text" class="tagsinput" value="First,Second,Third"/>';
+    //             $output.='<input type="text" id="participant_email" class="input_fn form-control"/>';
+    //             $output.='<span id="btnAdd" class="input-group-addon"><span class="line-height-2 fa fa-plus"></span></span>';
+    //             $output.='<span id="btnDel"  class="input-group-addon"><span disable class="line-height-2 fa fa-minus"></span></span>';
+    //         $output.='</div>';
+    //         $output.='<span class="help-block">Example "abc@domain.com"</span>';
+    //     $output.='</div>';
+    // $output.='</div>';
+
+  $output.='<div class="form-group">';
+    //$output.='<label class="col-md-2 col-xs-12 control-label">Postal Code*</label>';
+    $output.='<div class="col-md-11 col-xs-12 margin-left-10">';
+      // $output.='<div class="input-group">';
+          // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
+          $output.='<input type="textarea" style="min-height:100px;" class="tagsinput form-control" value="Chris Dodd,Dong,Jp"/>';
+          //$output.='<input type="text" class="min-heigth-80 form-control"/>';
+      // $output.='</div>';
+      $output.='<span class="help-block">Input attendee name and press ENTER</span>';
     $output.='</div>';
-
-
   $output.='</div>';
-$output.='</form>';
+
+
+  //$output.='</div>';
+
 
 
 return $output;
@@ -700,29 +732,29 @@ function reviewAndSubmit(){
 $output='';
 
 $output.='<form class="form-horizontal">';
-  $output.='<div class="container margin-top-pt-4">';
+  $output.='<div class=" margin-top-pt-4">';
 
     $output.='<div class="form-group">';
         $output.='<div class="col-md-12 col-xs-12">';
-        $output.='<label class="font-size-16 col-md-3 col-xs-12 control-label">Participant Email:</label>';
+        $output.='<label class="font-weight-400 font-size-16 col-md-3 col-xs-12 control-label">Participant Email:</label>';
         $output.='<div class="col-md-6 col-xs-6">';
             $output.='<div class="padding-top-6 input-group">';
 
                 $output.='<ul class="list-style-type-none">';
-                $output.='<li class="color-85888c font-size-16 color-000">Selected Program Title</li>';
+                $output.='<li class="font-weight-400 color-85888c font-size-16 color-000">Selected Program Title</li>';
                 $output.='</ul>';
 
             $output.='</div>';
              //$output.='<span class="input-group-addon"><span class="line-height-2 fa fa-edit"></span></span>';
         $output.='</div>';
-        $output.='<span class="font-size-14 col-md-3 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
+        $output.='<span class="padding-right-pt-10 font-size-14 col-md-2 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
     $output.='<hr class="width-pt-80">';
 
         $output.='<div class="form-group">';
         $output.='<div class="col-md-12 col-xs-12">';
-        $output.='<label class="font-size-16 col-md-3 col-xs-12 control-label">Date & Start Time:</label>';
+        $output.='<label class="font-weight-400 font-size-16 col-md-3 col-xs-12 control-label">Date & Start Time:</label>';
         $output.='<div class="col-md-6 col-xs-6">';
             $output.='<div class="padding-top-6 input-group">';
 
@@ -734,7 +766,7 @@ $output.='<form class="form-horizontal">';
             $output.='</div>';
              //$output.='<span class="input-group-addon"><span class="line-height-2 fa fa-edit"></span></span>';
         $output.='</div>';
-        $output.='<span class="font-size-14 col-md-3 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
+        $output.='<span class="padding-right-pt-10 font-size-14 col-md-2 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
     $output.='<hr class="width-pt-80">';
@@ -742,7 +774,7 @@ $output.='<form class="form-horizontal">';
 
       $output.='<div class="form-group">';
         $output.='<div class="col-md-12 col-xs-12">';
-        $output.='<label class="font-size-16 col-md-3 col-xs-12 control-label">Requested Speaker:</label>';
+        $output.='<label class="font-weight-400 font-size-16 col-md-3 col-xs-12 control-label">Requested Speaker:</label>';
         $output.='<div class="col-md-6 col-xs-6">';
             $output.='<div class="padding-top-6 input-group">';
 
@@ -753,7 +785,7 @@ $output.='<form class="form-horizontal">';
             $output.='</div>';
              //$output.='<span class="input-group-addon"><span class="line-height-2 fa fa-edit"></span></span>';
         $output.='</div>';
-        $output.='<span class="font-size-14 col-md-3 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
+        $output.='<span class="padding-right-pt-10 font-size-14 col-md-2 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
     $output.='<hr class="width-pt-80">';
@@ -761,7 +793,7 @@ $output.='<form class="form-horizontal">';
 
       $output.='<div class="form-group">';
         $output.='<div class="col-md-12 col-xs-12">';
-        $output.='<label class="font-size-16 col-md-3 col-xs-12 control-label">Meeting Location:</label>';
+        $output.='<label class="font-weight-400 font-size-16 col-md-3 col-xs-12 control-label">Meeting Location:</label>';
         $output.='<div class="col-md-6 col-xs-6">';
             $output.='<div class="padding-top-6 input-group">';
 
@@ -775,7 +807,7 @@ $output.='<form class="form-horizontal">';
             $output.='</div>';
              //$output.='<span class="input-group-addon"><span class="line-height-2 fa fa-edit"></span></span>';
         $output.='</div>';
-        $output.='<span class="font-size-14 col-md-3 col-xs-6"><span class="color-f34662  margin-right-pt-70 float-right line-height-2">edit</span>';
+        $output.='<span class="padding-right-pt-10 font-size-14 col-md-2 col-xs-6"><span class="color-f34662  margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
     $output.='<hr class="width-pt-80">';
@@ -783,7 +815,7 @@ $output.='<form class="form-horizontal">';
 
       $output.='<div class="form-group">';
         $output.='<div class="col-md-12 col-xs-12">';
-        $output.='<label class="font-size-16 col-md-3 col-xs-12 control-label">Invited Participants:</label>';
+        $output.='<label class="font-weight-400 font-size-16 col-md-3 col-xs-12 control-label">Invited Participants:</label>';
         $output.='<div class="col-md-6 col-xs-6">';
             $output.='<div class="padding-top-6 input-group">';
 
@@ -794,7 +826,7 @@ $output.='<form class="form-horizontal">';
             $output.='</div>';
              //$output.='<span class="input-group-addon"><span class="line-height-2 fa fa-edit"></span></span>';
         $output.='</div>';
-        $output.='<span class="font-size-14 col-md-3 col-xs-6"><span class="color-f34662  margin-right-pt-70 float-right line-height-2">edit</span>';
+        $output.='<span class="padding-right-pt-10 font-size-14 col-md-2 col-xs-6"><span class="color-f34662  margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
     $output.='<hr class="width-pt-80">';
@@ -807,59 +839,141 @@ $output.='</form>';
 return $output;
 
 }
-function step3Temp(){
+// function step3Temp(){
 
-  $output = '';
+//   $output = '';
 
 
-  $output.='<hr>';
-  $output.='<div class="row ">';
-    $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
-    $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
-  $output.='</div>';
+//   $output.='<hr>';
+//   $output.='<div class="row ">';
+//     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
+//     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
+//   $output.='</div>';
 
-  $output.='<div class=" container margin-top-pt-4 ">';
-    // Date Calender Select
-    $output.='<div class="col-md-6">';
+//   $output.='<div class=" container margin-top-pt-4 ">';
+//     // Date Calender Select
+//     $output.='<div class="col-md-6">';
 
-      $output.='<div class="float-right col-md-8 border-1-ACAEB1  padding-0">';
-        $output.='<div class="datepicker"></div>';
-      $output.='</div>';
-        //Select Time and Duration
-      $output.='<div class="float-right col-md-8 col-xs-12 border-1-ACAEB1  margin-top-pt-4  padding-bottom-24">';
+//       $output.='<div class="float-right col-md-8 border-1-ACAEB1  padding-0">';
+//         $output.='<div class="datepicker"></div>';
+//       $output.='</div>';
+//         //Select Time and Duration
+//       $output.='<div class="float-right col-md-8 col-xs-12 border-1-ACAEB1  margin-top-pt-4  padding-bottom-24">';
 
-        // Select Time
-        $output.='<div class="row margin-top-24">';
-          $output.='<div class="col-md-5 col-xs-5">';
-            $output.='<div  class="button-F34662 btn ">Start Time </div>';
-          $output.='</div>';
+//         // Select Time
+//         $output.='<div class="row margin-top-24">';
+//           $output.='<div class="col-md-5 col-xs-5">';
+//             $output.='<div  class="button-F34662 btn ">Start Time </div>';
+//           $output.='</div>';
 
-          $output.='<div class="col-md-4 col-xs-4">';
-              $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:90px">Time <span class="caret"></span></a>';
-              $output.= selectTime();
-          $output.='</div>';
+//           $output.='<div class="col-md-4 col-xs-4">';
+//               $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:90px">Time <span class="caret"></span></a>';
+//               $output.= selectTime();
+//           $output.='</div>';
 
-          $output.='<div class="col-md-2 col-xs-2 padding-0">';
+//           $output.='<div class="col-md-2 col-xs-2 padding-0">';
 
-              $output.='<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">AM <span class="caret"></span></a>';
-              $output.='<ul class="dropdown-menu" role="menu">';
-                $output.='<li><a href="#">AM</a></li>';
-                $output.='<li><a href="#">PM</a></li>';
-              $output.='</ul>';
+//               $output.='<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">AM <span class="caret"></span></a>';
+//               $output.='<ul class="dropdown-menu" role="menu">';
+//                 $output.='<li><a href="#">AM</a></li>';
+//                 $output.='<li><a href="#">PM</a></li>';
+//               $output.='</ul>';
+
+//         $output.='</div>';
+
+//     $output.='</div>';
+//       // Select time Ends
+
+//       // Select duration
+//       $output.='<div class="row margin-top-24">';
+//         $output.='<div class="col-md-5 col-xs-5">';
+//          $output.='<div  class="button-F34662 btn ">Duration</div>';
+//         $output.='</div>';
+
+//         $output.='<div class="col-md-6 col-xs-6">';
+//             $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:150px">30 minutes <span class="caret"></span></a>';
+//             $output.= selectDuration();
+//         $output.='</div>';
+//       $output.='</div>';
+//       // Select duration Ends
+
+//     $output.='</div>';
+//     // Select Time and Duration End
+//     $output.='</div>';
+
+//     //Meeting Details Starts
+//     $output.='<div class="col-md-6 margin-top-4">';
+//       $output.='<div class="row">';
+//         $output.='<div class="col-md-8" style="background:#0076A3">';
+//           $output.='<h4 class="color-fff font-size-18 padding-top-9 text-center">Selected Date & Times</h4>';
+//         $output.='</div>';
+//       $output.='</div>';
+
+//       $output.='<div class="row">';
+//         $output.='<div class="col-md-8 border-1-ACAEB1 padding-bottom-275" style="background:#fff">';
+//           $output.='<h4 class="color-000 font-size-14 margin-top-24 text-center">Meeting Date:</h4>';
+//           $output.='<h4 class="color-000 font-size-14 text-center">Start Time:</h4>';
+//           $output.='<h4 class="color-000 font-size-14 text-center">Meeting Duration:</h4>';
+//         $output.='</div>';
+//       $output.='</div>';
+//     $output.='</div>';
+//     //Meeting Details End
+
+
+
+
+//   $output.='</div>';
+//   return $output;
+// }
+
+function selectDateTime(){
+
+$output = '';
+$output.='<div class=" margin-top-pt-4 " style="height:auto; padding-left:10%; padding-right:10%;" >';
+
+  // Date Calender Select
+  $output.='<div class="col-md-6 col-xs-6">';
+    $output.='<div class="row" style="border: 1px solid;">';
+      $output.='<div class="datepicker "></div>';
+    $output.='</div>';
+    //Select Time and Duration
+    $output.='<div class="start-time-duration row">';
+
+
+      // Select Time
+      $output.='<div class="row margin-top-14">';
+        $output.='<div class="col-md-6 col-xs-6">';
+          $output.='<label class="font-weight-400 font-size-16 control-label">Start Time :</label>';
+          //$output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:100px">Start Time </a>';
+        $output.='</div>';
+
+        $output.='<div class="col-md-3 col-xs-3">';
+            $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="">Time <span class="caret"></span></a>';
+            $output.= selectTime();
+        $output.='</div>';
+
+        $output.='<div class="col-md-3 col-xs-3">';
+
+            $output.='<a href="#" style="" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">AM <span class="caret"></span></a>';
+            $output.='<ul class="dropdown-menu" role="menu">';
+              $output.='<li><a href="#">AM</a></li>';
+              $output.='<li><a href="#">PM</a></li>';
+            $output.='</ul>';
 
         $output.='</div>';
 
-    $output.='</div>';
+      $output.='</div>';
       // Select time Ends
 
       // Select duration
       $output.='<div class="row margin-top-24">';
-        $output.='<div class="col-md-5 col-xs-5">';
-         $output.='<div  class="button-F34662 btn ">Duration</div>';
+        $output.='<div class="col-md-6 col-xs-6">';
+          $output.='<label class="font-weight-400 font-size-16 control-label">Duration :</label>';
+         //$output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:100px">Duration </a>';
         $output.='</div>';
 
         $output.='<div class="col-md-6 col-xs-6">';
-            $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:150px">30 minutes <span class="caret"></span></a>';
+            $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" >Duration <span class="caret"></span></a>';
             $output.= selectDuration();
         $output.='</div>';
       $output.='</div>';
@@ -867,30 +981,67 @@ function step3Temp(){
 
     $output.='</div>';
     // Select Time and Duration End
-    $output.='</div>';
 
-    //Meeting Details Starts
-    $output.='<div class="col-md-6 margin-top-4">';
-      $output.='<div class="row">';
-        $output.='<div class="col-md-8" style="background:#0076A3">';
-          $output.='<h4 class="color-fff font-size-18 padding-top-9 text-center">Selected Date & Times</h4>';
-        $output.='</div>';
+  $output.='</div>';
+
+  //Meeting Details Starts
+  $output.='<div class="col-md-6 col-xs-6">';
+
+
+      $output.='<div class="row" style="background:#0076A3">';
+        $output.='<h4 class="color-fff font-size-18 padding-top-9 text-center">Selected Date & Times</h4>';
       $output.='</div>';
 
-      $output.='<div class="row">';
-        $output.='<div class="col-md-8 border-1-ACAEB1 padding-bottom-275" style="background:#fff">';
-          $output.='<h4 class="color-000 font-size-14 margin-top-24 text-center">Meeting Date:</h4>';
-          $output.='<h4 class="color-000 font-size-14 text-center">Start Time:</h4>';
-          $output.='<h4 class="color-000 font-size-14 text-center">Meeting Duration:</h4>';
-        $output.='</div>';
+
+
+      $output.='<div class="row border-1-a3bad9 padding-bottom-275" style="background:#fff; border: 1px solid; padding-left: 30%;">';
+        $output.='<h4 class="color-000 font-size-14 margin-top-24 ">Meeting Date:</h4>';
+        $output.='<h4 class="color-000 font-size-14 ">Start Time:</h4>';
+        $output.='<h4 class="color-000 font-size-14 ">Meeting Duration:</h4>';
       $output.='</div>';
-    $output.='</div>';
-    //Meeting Details End
-
-
 
 
   $output.='</div>';
-  return $output;
+
+$output.='</div>';
+  //Meeting Details End
+
+return $output;
 }
+
+
+
+// Miss code
+// $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
+// $output.='<div class="col-md-6 col-xs-6 btn-group">';
+//   $output.='<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Accredited <span class="caret"></span></a>';
+//   $output.='<ul class="dropdown-menu" role="menu">';
+//       $output.='<li><a href="#">Accredited</a></li>';
+//       $output.='<li><a href="#">Non Accredited</a></li>';
+//   $output.='</ul>';
+// $output.='</div>';
+
+
+
+
+ // Program list
+
+
+              // for ($i=1 ; $i <= 10 ; $i++){
+
+
+
+                // $output.='<div class="row program-list" style="margin-top: 30px; background-color: #F0F8FF " >';
+
+                // $output.='<div class="col-md-1 col-xs-1 fixed"><i class="fa fa-plus-circle font-size-24 padding-top-4"></i></div>';
+                // $output.='<div class="col-md-10 col-xs-10 fixed padding-top-4 "> Program title and learning objective </div>';
+                // $output.='<div class="col-md-1 col-xs-1 fixed "> <button  type="button" class="actionClick float-right btn btn-primary ">Schedule</button> </div>';
+
+                // $output.='</div>';
+
+              //}
     ?>
+
+
+
+

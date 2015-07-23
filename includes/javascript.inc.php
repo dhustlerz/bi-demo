@@ -24,7 +24,7 @@ function javascriptLoad() {
     // $output.='<script type="text/javascript" src="js/demo_maps.js"></script>';
     $output.='<!-- END MAP PLUGINS-->';
     $output.='<!-- END MORRIS CHART PLUGINS-->';
-    // $output.='<script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>';
+     $output.='<script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>';
     // $output.='<script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>';
     // $output.='<script type="text/javascript" src="js/demo_charts_morris.js"></script>';
     $output.='<!-- END MORRIS CHART PLUGINS-->';
@@ -45,9 +45,11 @@ function javascriptLoad() {
     // $output.='<script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.j"></script>';
     // $output.='<script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>';
     $output.='<script type="text/javascript" src="js/plugins/bootstrap/bootstrap-datepicker.js"></script>';
-    // $output.='<script type="text/javascript" src="js/plugins/owl/owl.carousel.min.js"></script>';
-    // $output.='<script type="text/javascript" src="js/plugins/moment.min.js"></script>';
-    // $output.='<script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js"></script>';
+
+    $output.='<script type="text/javascript" src="js/plugins/owl/owl.carousel.min.js"></script>';
+    $output.='<script type="text/javascript" src="js/plugins/moment.min.js"></script>';
+    $output.='<script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js"></script>';
+    $output.='<script type="text/javascript" src="js/plugins/tagsinput/jquery.tagsinput.min.js"></script>';
     // $output.='<script type="text/javascript" src="js/plugins/markerclustererplus.js"></script>';
     // $output.='<script type="text/javascript" src="js/plugins/jquery-animateNumber.js"></script>';
     // $output.='<script type="text/javascript" src="js/plugins/gauge.js"></script>';
@@ -62,7 +64,7 @@ function javascriptLoad() {
     $output.='<script type="text/javascript" src="js/plugins.js"></script>';
     $output.='<script type="text/javascript" src="js/actions.js"></script>';
     $output.='<script type="text/javascript" src="js/add_remove.js"></script>';
-    // $output.='<script type="text/javascript" src="js/demo_dashboard.js"></script>';
+     //$output.='<script type="text/javascript" src="js/demo_dashboard.js"></script>';
     $output.='<!--<script type="text/javascript" src="js/custom-charts.js"></script>-->';
     $output.='<!-- END TEMPLATE -->';
     $output.='<!-- START D3V3-->';

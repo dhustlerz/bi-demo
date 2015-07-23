@@ -625,25 +625,25 @@ Object.size = function(obj) {
     return size;
 };
 
-var morrisCharts = function() {
-        Morris.Bar({
-        element: 'morris-bar-example',
-        data: [
-            { y: 'Online Courses', b: 25 },
-            { y: 'Self Learning', b: 18 },
-            { y: 'Symposia', b: 16 },
-            { y: 'Interactive Cases', b: 15 },
-            { y: 'Mixed topic education', b: 13 },
-            { y: 'Webinars', b: 11 },
-            { y: 'Others', b: 2 }
+// var morrisCharts = function() {
+//         Morris.Bar({
+//         element: 'morris-bar-example',
+//         data: [
+//             { y: 'Online Courses', b: 25 },
+//             { y: 'Self Learning', b: 18 },
+//             { y: 'Symposia', b: 16 },
+//             { y: 'Interactive Cases', b: 15 },
+//             { y: 'Mixed topic education', b: 13 },
+//             { y: 'Webinars', b: 11 },
+//             { y: 'Others', b: 2 }
 
-        ],
-        xkey: 'y',
-        ykeys: ['b'],
-        labels: [ 'Series B'],
-        barColors: [ '#003459']
-    });
-}();
+//         ],
+//         xkey: 'y',
+//         ykeys: ['b'],
+//         labels: [ 'Series B'],
+//         barColors: [ '#003459']
+//     });
+// }();
 
 
 

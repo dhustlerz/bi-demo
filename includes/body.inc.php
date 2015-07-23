@@ -6,6 +6,7 @@
 
              // START PAGE SIDEBAR
              include 'sidebar.inc.php' ;
+             echo sidebar();
              // END PAGE SIDEBAR -->
 
              // PAGE CONTENT -->

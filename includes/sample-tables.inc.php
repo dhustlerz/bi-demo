@@ -77,7 +77,7 @@ function fakeSpeakerList(){
     $output.='<div class="row ">';
       $output.='<table class="table datatable dataTable no-footer">';
          $output.='<thead><tr><th style="width: 150px;">Sr No.</th><th>Speaker Name</th><th>Specialty</th><th style="width: 140px;">Select</th></tr></thead>';
-          $output.='<tbody class="font-size-12">';
+          $output.='<tbody class="font-size-14">';
 
             for ($speakerCount=1; $speakerCount<=10; $speakerCount++){
               $output.='<tr><td>'.$speakerCount.'</td><td><a href="#">Dr First Name</a></td><td>Specialty</td><td><button type="button" class="actionClick btn btn-primary ">Select</i></button> </td></tr>';
@@ -92,10 +92,10 @@ function fakeSpeakerList(){
 
 function fakeProgramList() {
   $output='';
-    $output.='<div class=" margin-top-pt-4">';
+    $output.='<div class="row">';
       $output.='<table class="table datatable  ">';
          $output.='<thead><tr><th></th><th>Program Name</th><th>Learning Objective</th><th>Program Type</th><th style="width: 140px;">Select</th></tr></thead>';
-          $output.='<tbody class="font-size-12">';
+          $output.='<tbody class="font-size-14">';
 
             for ($speakerCount=1; $speakerCount<=10; $speakerCount++){
               $output.='<tr><td><i class="fa fa-plus-circle font-size-24 padding-top-4"></i></td><td><a href="#">Program Name</a></td><td>Learning Objective</td><td>Program Type</td><td><button type="button" class="actionClick btn btn-primary ">Select</i></button> </td></tr>';

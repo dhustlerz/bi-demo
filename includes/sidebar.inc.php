@@ -1,19 +1,20 @@
 <?php
+function sidebar() {
 $sidebar_output = '';
 //$sidebar_output.='<div  class="page-container">';
-$sidebar_output.='<div class="page-sidebar bg-ffffff height-50">';
+$sidebar_output.='<div class="page-sidebar bg-ffffff" style="height: 50px;">';
 
     /**
      * START X-NAVIGATION
      */
-    $sidebar_output.='<ul class="x-navigation page-navigation-top-fixed">';
+    $sidebar_output.='<ul class="x-navigation page-navigation-top-fixed bf-ffffff" >';
 
-     $sidebar_output.='<li class="xn-logo">';
+      $sidebar_output.='<li class="xn-logo">';
 
-            $sidebar_output.='<a href="#">Flexxia</a>';
-            $sidebar_output.='<a href="#" class="x-navigation-control"></a>';
-            $sidebar_output.='<a href="#" class="reportrange x-navigation-datepicker"></a>';
-        $sidebar_output.='</li>';
+          $sidebar_output.='<a href="#">Flexxia</a>';
+          $sidebar_output.='<a href="#" class="x-navigation-control" ></a>';
+          //$sidebar_output.='<a href="#" class="reportrange x-navigation-datepicker"></a>';
+      $sidebar_output.='</li>';
 
 
         /**
@@ -81,7 +82,9 @@ $sidebar_output.='<div class="page-sidebar bg-ffffff height-50">';
      */
   $sidebar_output.='</div>';
 //$sidebar_output.='</div>';
-printf($sidebar_output);
+return($sidebar_output);
+
+}
 
 
 ?>

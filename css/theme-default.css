@@ -84,7 +84,7 @@ body {
   float: left;
   min-height: 100%;
   position: relative;
-  background: #def1ff;
+  background: #f1fbff;
   /* SIDEBAR */
   /* END SIDEBAR */
   /* CONTENT */
@@ -448,7 +448,7 @@ body.page-container-boxed .page-container {
 }
 .x-navigation.x-navigation-horizontal {
   height: 50px;
-  background: #ffffff;
+  background: #F5F5F5;
 }
 .x-navigation.x-navigation-horizontal .xn-logo a {
   border-bottom: 0px;
@@ -803,7 +803,7 @@ body.page-container-boxed .page-container {
   background: #2d3945;
 }
 .x-navigation.x-navigation-custom li ul {
-  background: #2d3945;
+  background: #fff;
 }
 .x-navigation.x-navigation-custom li > a {
   border-bottom: 0px;
@@ -913,7 +913,7 @@ body.page-container-boxed .page-container {
   display: none;
 }
 .x-navigation .x-navigation-control:hover {
-  background: #428bca;
+  background: transparent;
   border-bottom: 0px;
 }
 .x-navigation .x-navigation-control:before {
@@ -962,7 +962,7 @@ body.page-container-boxed .page-container {
   height: 50px;
 }
 .x-navigation > li.xn-logo > a:first-child:hover {
-  background-color: #ffffff;
+  background-color: #0076A3;
 }
 .x-navigation > li.xn-profile {
   padding: 0px;
@@ -3211,7 +3211,7 @@ blockquote.pull-right {
   background: #F8FAFC;
 }
 .table > thead > tr > th {
-  background: #0061a6;
+  background: #0076A3;
   color: #ffffff;
   font-size: 12px;
 }
@@ -5328,13 +5328,15 @@ td.dataTables_empty {
 /* BOOTSTRAP DATEPICKER */
 div.datepicker {
   /*padding: 4px;*/
-  //padding: 2px;
-  //border: 5px solid red;
- /* -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  /*padding: 5px;*/
+/* border: 1px solid ;*/
+/*  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);*/
 }
 div.datepicker > div {
+
   display: none;
 }
 div.datepicker table {
@@ -5365,9 +5367,9 @@ div.datepicker td.active,
 div.datepicker td.active:hover {
   background: #95B75D;
   color: #fff;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
 }
 div.datepicker td span {
   display: block;
@@ -6072,7 +6074,7 @@ input.ui-editRangeSlider-inputValue {
   list-style: none;
   display: block;
   position: relative;
-  width: 100%;
+  width: 113%;
 }
 .wizard .anchor:after {
   content: " ";
@@ -6093,7 +6095,8 @@ input.ui-editRangeSlider-inputValue {
 }
 .wizard .anchor li a {
   font-size: 14px;
-  color: #656d78;
+  color: #fff;
+  /*color: #656d78;*/
   text-decoration: none;
   display: block;
   line-height: 18px;
@@ -6105,6 +6108,7 @@ input.ui-editRangeSlider-inputValue {
 }
 .wizard .anchor li a .stepDesc {
   font-weight: 400;
+  margin-left: -5%;
 }
 .wizard .anchor li a .stepDesc small {
   color: #999;
@@ -6406,7 +6410,7 @@ div.tagsinput {
   border: 1px solid #D5D5D5;
   background: #FFF;
   width: 100%;
-  min-height: 30px;
+  min-height: 100px;
   overflow-y: auto;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -7454,9 +7458,7 @@ li.ext_zip {
   .x-navigation {
     max-height: 50px;
     overflow: hidden;
-    background:   background: #0076A3;
-  background: #0076A3;
-#0076A3;
+  background: #ffffff;
   }
   .x-navigation.x-navigation-panel {
     height: 50px;
@@ -7576,7 +7578,7 @@ li.ext_zip {
   font-family: inherit;
   font-size: 15px;
   padding-left: 20px;
-  background-color: #0061a6;
+  background-color: #0076A3;
   color: #ffffff;
   line-height: 2;
  }
@@ -7607,15 +7609,16 @@ li.ext_zip {
 
 .action-btn-wizard-previous, .action-btn-wizard-next{
   border-radius: 0px;
-  background-color: #F34662;
+  background-color: transparent;
+
   /*margin-right: 20;*/
-  border-color: #F34662;
+  /*border-color: #F34662;*/
   /* width: 75px; */
   /*border-radius: 1px;*/
-  color: #fff;
+  color: #0076A3;
 }
 .action-btn-wizard-previous:hover, .action-btn-wizard-next:hover {
-    color: #fff;
+    color: #0076A3;
 }
 
 .btn-primary.changeColorTo95B75D {
@@ -7693,5 +7696,11 @@ h5{
  text-align: left;
 }
 
+}
 
+
+.start-time-duration{
+  margin-top: 12px;
+  border: 1px solid;
+  padding-bottom: 18px;
 }
