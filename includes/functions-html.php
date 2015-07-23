@@ -995,10 +995,10 @@ $output.='<div class=" margin-top-pt-4 " style="height:auto; padding-left:10%; p
 
 
 
-      $output.='<div class="row border-1-a3bad9 padding-bottom-275" style="background:#fff; border: 1px solid; padding-left: 30%;">';
-        $output.='<h4 class="color-000 font-size-14 margin-top-24 ">Meeting Date:</h4>';
-        $output.='<h4 class="color-000 font-size-14 ">Start Time:</h4>';
-        $output.='<h4 class="color-000 font-size-14 ">Meeting Duration:</h4>';
+      $output.='<div class="row border-1-a3bad9 padding-bottom-275" style="background:#fff; border: 1px solid; padding-left: 30%; ">';
+        $output.='<h4 class="font-weight-400 color-000 font-size-16 margin-top-24 ">Meeting Date:</h4>';
+        $output.='<h4 class="font-weight-400 color-000 font-size-16 ">Start Time:</h4>';
+        $output.='<h4 class="font-weight-400 color-000 font-size-16 ">Meeting Duration:</h4>';
       $output.='</div>';
 
 
