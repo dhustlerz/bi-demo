@@ -39,7 +39,7 @@ $output.='<div class="page-content-wrap ">';
 
      require_once 'includes/functions-html.php';
 
-     $output.= scheduler_concept_2();
+     $output.= scheduler_concept_1();
 
     /**
      * END  Widgets 1
