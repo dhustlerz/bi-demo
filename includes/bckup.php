@@ -11,7 +11,7 @@ $output = '';
      *
      */
 
-     $output = top_navigation();
+    // $output = top_navigation();
     /**
      * START X-NAVIGATION VERTICAL 2
      *
@@ -21,8 +21,8 @@ $output = '';
      * START BREADCRUMB
      */
     // $output.='<ul class="breadcrumb">';
-      // $output.='<li><a href="#">Home</a></li>';
-      // $output.='<li class="active">IPF Scheduler</li>';
+    //   $output.='<li><a href="#">Home</a></li>';
+    //   $output.='<li class="active">IPF Scheduler</li>';
     // $output.='</ul>';
 /**
  * END BREADCRUMB
@@ -39,7 +39,9 @@ $output.='<div class="page-content-wrap ">';
 
      require_once 'includes/functions-html.php';
 
-     $output.= scheduler_concept_2();
+
+     // $wizard = wizard();
+     // $output.= $wizard;
 
     /**
      * END  Widgets 1

@@ -71,16 +71,37 @@ function educational_gaps(){
 
 }
 
+function fakeSpeakerListWithImage(){
+  $output='';
+    $output.='<div class="speaker-table-c2 row ">';
+      $output.='<table class=" table datatable dataTable no-footer">';
+         $output.='<thead><tr><th style="width: 10%; padding-left:2%;;"></th><th>Speaker Name</th><th>Specialty</th><th>Location</th><th style="width: 140px;"></th></tr></thead>';
+          $output.='<tbody class="font-size-14">';
+
+            for ($speakerCount=1; $speakerCount<=8; $speakerCount++){
+              $output.='<tr><td >';
+                $output.='<div class="padding-left-20">';
+                  $output.='<span  style="font-size: 40px; " class="doctor-profile fa fa-user-md"></span>';
+                $output.='</div>';
+              $output.='</td><td><a href="#">Dr Full Name</a></td><td>Respirologist</td><td>Windsor ,ON</td><td><button type="button" class="actionClick btn btn-primary ">Select</i></button> </td></tr>';
+              // <i class="fa fa-check">
+            }
+          $output.='</tbody>';
+      $output.='</table>';
+  $output.='</div>';
+  return $output;
+
+}
 
 function fakeSpeakerList(){
   $output='';
     $output.='<div class="row ">';
       $output.='<table class="table datatable dataTable no-footer">';
-         $output.='<thead><tr><th style="width: 150px;">Sr No.</th><th>Speaker Name</th><th>Specialty</th><th style="width: 140px;">Select</th></tr></thead>';
+         $output.='<thead><tr><th style="width: 150px;">Sr No.</th><th>Speaker Name</th><th>Specialty</th><th style="width: 140px;"></th></tr></thead>';
           $output.='<tbody class="font-size-14">';
 
             for ($speakerCount=1; $speakerCount<=10; $speakerCount++){
-              $output.='<tr><td>'.$speakerCount.'</td><td><a href="#">Dr First Name</a></td><td>Specialty</td><td><button type="button" class="actionClick btn btn-primary ">Select</i></button> </td></tr>';
+              $output.='<tr><td>'.$speakerCount.'</td><td><a href="#">Dr Full Name</a></td><td>Respirologist</td><td><button type="button" class="actionClick btn btn-primary ">Select</i></button> </td></tr>';
               // <i class="fa fa-check">
             }
           $output.='</tbody>';

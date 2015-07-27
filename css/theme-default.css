@@ -7700,7 +7700,31 @@ h5{
 
 
 .start-time-duration{
-  margin-top: 12px;
+/*  margin-top: 12px;
   border: 1px solid;
+  padding-bottom: 18px;*/
+    margin-top: 7%;
+  /* border: 1px solid; */
   padding-bottom: 18px;
+}
+
+.doctor-profile {
+  width: 70px;
+  height: 70px;
+  padding-left: 17;
+  padding-top: 10;
+  border: 3px solid #ecedee;
+  background-color: #ecedee;
+  -moz-border-radius: 50%;
+   -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.speaker-table-c2 td {
+  padding-top: 30px;
+}
+.speaker-table-c2 .table>tbody>tr>td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: middle;
+  border-top: 1px solid #ddd;
 }

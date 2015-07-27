@@ -1,5 +1,6 @@
 <?php
 include 'sample-tables.inc.php' ;
+include 'select.inc.php';
 function widget1( $ques_sent, $responses, $response_rate) {
  $output = '';
   // $ques_sent = 1475 ;
@@ -258,10 +259,10 @@ function top_navigation() {
 
 
 /*
- * Function wizard id defined for to show the stpes of even being scheduled
+ * Scheduler Concept one
  */
 
-function wizard(){
+function scheduler_concept_1(){
 
 $output='';
 
@@ -534,84 +535,276 @@ return $output;
 
 }
 
+/*
+ * Scheduler Concept one
+ */
 
-function selectTime(){
-$output = '';
+function scheduler_concept_2(){
 
-$output.='<ul class="dropdown-menu scrollable-menu " role="menu">';
+$output='';
 
-  $output.='<li><a href="#">12:00 </a></li>';
-  $output.='<li><a href="#">12:15 </a></li>';
-  $output.='<li><a href="#">12:30 </a></li>';
-  $output.='<li><a href="#">12:45 </a></li>';
-  $output.='<li><a href=#">1:00 </a></li>';
-  $output.='<li><a href=#">1:15 </a></li>';
-  $output.='<li><a href=#">1:30 </a></li>';
-  $output.='<li><a href=#">1:45 </a></li>';
-  $output.='<li><a href=#">2:00 </a></li>';
-  $output.='<li><a href=#">2:15 </a></li>';
-  $output.='<li><a href=#">2:30 </a></li>';
-  $output.='<li><a href=#">2:45 </a></li>';
-  $output.='<li><a href=#">3:00 </a></li>';
-  $output.='<li><a href=#">3:15 </a></li>';
-  $output.='<li><a href=#">3:30 </a></li>';
-  $output.='<li><a href=#">3:45 </a></li>';
-  $output.='<li><a href=#">4:00 </a></li>';
-  $output.='<li><a href=#">4:15 </a></li>';
-  $output.='<li><a href=#">4:30 </a></li>';
-  $output.='<li><a href=#">4:45 </a></li>';
-  $output.='<li><a href=#">5:00 </a></li>';
-  $output.='<li><a href=#">5:15 </a></li>';
-  $output.='<li><a href=#">5:30 </a></li>';
-  $output.='<li><a href=#">5:45 </a></li>';
-  $output.='<li><a href=#">6:00 </a></li>';
-  $output.='<li><a href=#">6:15 </a></li>';
-  $output.='<li><a href=#">6:30 </a></li>';
-  $output.='<li><a href=#">6:45 </a></li>';
-  $output.='<li><a href=#">7:00 </a></li>';
-  $output.='<li><a href=#">7:15 </a></li>';
-  $output.='<li><a href=#">7:30 </a></li>';
-  $output.='<li><a href=#">7:45 </a></li>';
-  $output.='<li><a href=#">8:00 </a></li>';
-  $output.='<li><a href=#">8:15 </a></li>';
-  $output.='<li><a href="8-30-am">8:30 </a></li>';
-  $output.='<li><a href=#">8:45 </a></li>';
-  $output.='<li><a href=#">9:00 </a></li>';
-  $output.='<li><a href=#">9:15 </a></li>';
-  $output.='<li><a href=#">9:30 </a></li>';
-  $output.='<li><a href=#">9:45 </a></li>';
-  $output.='<li><a href="#">10:00 </a></li>';
-  $output.='<li><a href="#">10:15 </a></li>';
-  $output.='<li><a href="#">10:30 </a></li>';
-  $output.='<li><a href="#">10:45 </a></li>';
-  $output.='<li><a href="#">11:00 </a></li>';
-  $output.='<li><a href="#">11:15 </a></li>';
-  $output.='<li><a href="#">11:30 </a></li>';
-  $output.='<li><a href="#">11:45 </a></li>';
-$output.='</ul>';
+//row
+  $output.='<div class="">';
+  //col-md-12
+    $output.='<div class="">';
+    //panel
+      $output.='<div class="">';
+
+        $output.='<div class=" min-heigth-800">';
+          //$output.='<h3>Default Wizard</h3>';
+          $output.='<div class="wizard">';
+            $output.='<ul class="bg-0076A3" style="padding-bottom:0px; padding-left:4%; padding-right:0px; padding-top:9px;">';
+
+              $output.='<li>';
+                $output.='<a href="#step-1">';
+                  $output.='<span class="stepNumber">1</span>';
+                  $output.='<span class="stepDesc">Speaker<br /><small></small></span>';
+                $output.='</a>';
+              $output.='</li>';
+
+              $output.='<li>';
+                $output.='<a href="#step-2">';
+                  $output.='<span class="stepNumber">2</span>';
+                  $output.='<span class="stepDesc">Date & Time<br /><small></small></span>';
+                $output.='</a>';
+              $output.='</li>';
+
+              $output.='<li>';
+                $output.='<a href="#step-3">';
+                  $output.='<span class="stepNumber">3</span>';
+                  $output.='<span class="stepDesc">Details<br /><small></small></span>';
+                $output.='</a>';
+              $output.='</li>';
+
+              // $output.='<li>';
+              // $output.='<a href="#step-5">';
+              //     $output.='<span class="stepNumber">5</span>';
+              //     $output.='<span class="stepDesc text-center">Participants<br /><small></small></span>';
+              //   $output.='</a>';
+              // $output.='</li>';
+
+              $output.='<li>';
+              $output.='<a  href="#step-4">';
+                  $output.='<span class="stepNumber">4</span>';
+                  $output.='<span class="stepDesc" >Submit<br /><small></small></span>';
+                $output.='</a>';
+              $output.='</li>';
+
+            $output.='</ul>';
+
+            $output.='<div id="step-1">';
+            //Step 2 Starts
+              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
+                $output.='<h4 class="font-size-18">Step 1. Select Speaker</h4>';
+                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+                 Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+                  Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+                   </p>';
+                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+              $output.='</div>';
 
 
+              $output.='<div class="row">';
+                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+              $output.='</div>';
+
+
+
+              $output.='<div class="row">';
+                $output.='<div class="padding-20 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 20px solid #F5F5F5;">';
+
+                    $output.= fakeSpeakerListWithImage();
+
+                  $output.='</div>';
+                $output.='</div>';
+              $output.='</div>';
+
+            $output.='</div>';
+
+
+
+            // $output.='<div id="step-2">';
+            // //Step 2 Starts
+            //   $output.='<div class="padding-20 col-md-12 bg-ffffff ">';
+            //     $output.='<h4 class="font-size-18">Step 2. Details</h4>';
+            //     $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+            //      Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+            //       Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+            //        </p>';
+            //         $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+            //   $output.='</div>';
+
+
+            //   $output.='<div class="row">';
+            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+            //   $output.='</div>';
+
+
+
+            //   $output.='<div class="row">';
+            //     $output.='<div class="padding-20 col-md-12 ">';
+            //       $output.='<div class="panel" style="border: 20px solid #F5F5F5;">';
+
+            //         $output.= fakeSpeakerList();
+
+            //       $output.='</div>';
+            //     $output.='</div>';
+            //   $output.='</div>';
+
+            // $output.='</div>';
+
+
+
+            $output.='<div id="step-2">';
+            //Step 3 Starts
+              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
+                $output.='<h4 class="font-size-18">Step 3. Select Date and Time</h4>';
+                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+                 Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+                  Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+                   </p>';
+                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+              $output.='</div>';
+
+
+              $output.='<div class="row">';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+              $output.='</div>';
+
+
+
+              $output.='<div class="row">';
+                $output.='<div class="padding-20 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 20px solid #F5F5F5;min-height: 600px;">';
+
+                    $output.= selectDateTime();
+
+                  $output.='</div>';
+                $output.='</div>';
+              $output.='</div>';
+             //Step 3 ends
+            $output.='</div>';
+
+            $output.='<div id="step-3">';
+            //Step 4 Starts
+              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
+                $output.='<h4 class="font-size-18">Step 4. Select Location & Add Attendees</h4>';
+                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+                 Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+                  Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+                   </p>';
+                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+              $output.='</div>';
+
+
+              $output.='<div class="row">';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+              $output.='</div>';
+
+
+
+              $output.='<div class="row">';
+                $output.='<div class="padding-20 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 20px solid #F5F5F5; padding: 25px; min-height: 600px;">';
+
+                    $output.='<div class="row">';
+                      $output.='<h4 class="font-size-18" style="  margin: 10px; margin-bottom: 34px; font-weight: 300;">Location Information</h4>';
+                      $output.= selectLocation();
+                    $output.='</div>';
+
+                    $output.='<div class="row">';
+                      $output.='<h4 class="font-size-18" style="  margin: 10px; margin-bottom: 34px; margin-top: 34px; font-weight: 300;">Invite Attendees</h4>';
+                      $output.= inviteParticipants();
+                    $output.='</div>';
+
+                  $output.='</div>';
+
+                $output.='</div>';
+              $output.='</div>';
+            //Step 4 ends
+            $output.='</div>';
+
+            // $output.='<div id="step-5">';
+
+            // //Step 5 Starts
+            //   $output.='<div class="padding-20 col-md-12 ">';
+            //     $output.='<h4 class="font-size-18">Step 5. Invite Participants</h4>';
+            //     $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+            //     nteger ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+            //     Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+            //      </p>';
+            //     $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+            //   $output.='</div>';
+
+
+            //   $output.='<div class="row">';
+            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+            //   $output.='</div>';
+
+
+            //   $output.='<div class="row">';
+            //     $output.='<div class="padding-20 col-md-12 ">';
+            //       $output.='<div class="panel" style="border: 20px solid #F5F5F5; padding:25px; padding:25px; /*padding-top: 120;*/ min-height: 600px;">';
+
+            //         $output.= inviteParticipants();
+
+            //       $output.='</div>';
+            //     $output.='</div>';
+            //   $output.='</div>';
+            // //Step 5 Starts
+
+            // $output.='</div>';
+
+            $output.='<div id="step-4">';
+
+            //Step 5 Starts
+              $output.='<div class="padding-20 col-md-12 bg-ffffff ">';
+                $output.='<h4 class="font-size-18">Step 6. Review and Submit</h4>';
+                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+                nteger ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+                Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+                 </p>';
+                $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+              $output.='</div>';
+
+
+              $output.='<div class="row">';
+                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
+                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+              $output.='</div>';
+
+
+              $output.='<div class="row">';
+                $output.='<div class="padding-20 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 20px solid #F5F5F5; ">';
+
+                    $output.= reviewAndSubmit();
+                    $output.='<div class=" margin-bottom-24 col-md-6 col-xs-6"> <button  type="button" style="border-radius:0px;" class= "float-right btn btn-primary ">Submit</span></button> </div>';
+
+
+                  $output.='</div>';
+                $output.='</div>';
+              $output.='</div>';
+            //Step 5 Starts
+
+            $output.='</div>';
+
+          $output.='</div>';
+        $output.='</div>';
+      $output.='</div>';
+
+     $output.='</div>';
+  $output.='</div>';
 return $output;
+
 }
 
-
-function selectDuration(){
-$output = '';
-
-$output.='<ul class="dropdown-menu scrollable-menu " role="menu">';
-
-  $output.='<li><a href="#">30 Minutes         </a></li>';
-  $output.='<li><a href="#">1 Hour             </a></li>';
-  $output.='<li><a href="#">1 Hour 30 Minutes  </a></li>';
-  $output.='<li><a href="#">2 Hours            </a></li>';
-  $output.='<li><a href=#"> 2 Hours 30 Minutes </a></li>';
-  $output.='<li><a href=#"> 3 Hours            </a></li>';
-
-$output.='</ul>';
-
-
-return $output;
-}
 
 function selectLocation(){
 
@@ -840,92 +1033,6 @@ $output.='</form>';
 return $output;
 
 }
-// function step3Temp(){
-
-//   $output = '';
-
-
-//   $output.='<hr>';
-//   $output.='<div class="row ">';
-//     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn ">Previous</button> </div>';
-//     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn ">Next</button> </div>';
-//   $output.='</div>';
-
-//   $output.='<div class=" container margin-top-pt-4 ">';
-//     // Date Calender Select
-//     $output.='<div class="col-md-6">';
-
-//       $output.='<div class="float-right col-md-8 border-1-ACAEB1  padding-0">';
-//         $output.='<div class="datepicker"></div>';
-//       $output.='</div>';
-//         //Select Time and Duration
-//       $output.='<div class="float-right col-md-8 col-xs-12 border-1-ACAEB1  margin-top-pt-4  padding-bottom-24">';
-
-//         // Select Time
-//         $output.='<div class="row margin-top-24">';
-//           $output.='<div class="col-md-5 col-xs-5">';
-//             $output.='<div  class="button-F34662 btn ">Start Time </div>';
-//           $output.='</div>';
-
-//           $output.='<div class="col-md-4 col-xs-4">';
-//               $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:90px">Time <span class="caret"></span></a>';
-//               $output.= selectTime();
-//           $output.='</div>';
-
-//           $output.='<div class="col-md-2 col-xs-2 padding-0">';
-
-//               $output.='<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">AM <span class="caret"></span></a>';
-//               $output.='<ul class="dropdown-menu" role="menu">';
-//                 $output.='<li><a href="#">AM</a></li>';
-//                 $output.='<li><a href="#">PM</a></li>';
-//               $output.='</ul>';
-
-//         $output.='</div>';
-
-//     $output.='</div>';
-//       // Select time Ends
-
-//       // Select duration
-//       $output.='<div class="row margin-top-24">';
-//         $output.='<div class="col-md-5 col-xs-5">';
-//          $output.='<div  class="button-F34662 btn ">Duration</div>';
-//         $output.='</div>';
-
-//         $output.='<div class="col-md-6 col-xs-6">';
-//             $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:150px">30 minutes <span class="caret"></span></a>';
-//             $output.= selectDuration();
-//         $output.='</div>';
-//       $output.='</div>';
-//       // Select duration Ends
-
-//     $output.='</div>';
-//     // Select Time and Duration End
-//     $output.='</div>';
-
-//     //Meeting Details Starts
-//     $output.='<div class="col-md-6 margin-top-4">';
-//       $output.='<div class="row">';
-//         $output.='<div class="col-md-8" style="background:#0076A3">';
-//           $output.='<h4 class="color-fff font-size-18 padding-top-9 text-center">Selected Date & Times</h4>';
-//         $output.='</div>';
-//       $output.='</div>';
-
-//       $output.='<div class="row">';
-//         $output.='<div class="col-md-8 border-1-ACAEB1 padding-bottom-275" style="background:#fff">';
-//           $output.='<h4 class="color-000 font-size-14 margin-top-24 text-center">Meeting Date:</h4>';
-//           $output.='<h4 class="color-000 font-size-14 text-center">Start Time:</h4>';
-//           $output.='<h4 class="color-000 font-size-14 text-center">Meeting Duration:</h4>';
-//         $output.='</div>';
-//       $output.='</div>';
-//     $output.='</div>';
-//     //Meeting Details End
-
-
-
-
-//   $output.='</div>';
-//   return $output;
-// }
 
 function selectDateTime(){
 
@@ -948,12 +1055,12 @@ $output.='<div class=" margin-top-pt-4 " style="height:auto; padding-left:10%; p
           //$output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:100px">Start Time </a>';
         $output.='</div>';
 
-        $output.='<div class="col-md-3 col-xs-3">';
+        $output.='<div class="col-md-3 col-xs-2">';
             $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="">Time <span class="caret"></span></a>';
             $output.= selectTime();
         $output.='</div>';
 
-        $output.='<div class="col-md-3 col-xs-3">';
+        $output.='<div class="col-md-3 col-xs-2">';
 
             $output.='<a href="#" style="" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">AM <span class="caret"></span></a>';
             $output.='<ul class="dropdown-menu" role="menu">';
