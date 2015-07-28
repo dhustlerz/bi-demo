@@ -7698,12 +7698,19 @@ h5{
 
 }
 
-
-.start-time-duration{
+.start-time-duration {
+  margin-top: 2%;
+/*  border: 1px solid;
+  padding-bottom: 18px;*/
+/*    margin-top: 7%;*/
+   border: 1px solid;
+  padding-bottom: 18px;
+}
+.start-time-duration-program {
 /*  margin-top: 12px;
   border: 1px solid;
   padding-bottom: 18px;*/
-    margin-top: 7%;
+    margin-top: 8%;
   /* border: 1px solid; */
   padding-bottom: 18px;
 }

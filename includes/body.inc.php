@@ -11,9 +11,12 @@
 
              // PAGE CONTENT -->
              echo'<div class="page-content">';
-             // if ($request_URI == '/hc3-demo/overview.php') {
-             //    include 'content.inc.php';
-             // }
+             if ($request_URI == '/bi-demo/index.php?concept=1' || $request_URI == '/bi-demo/index.php' ) {
+                include 'scheduler_concept_1.inc.php';
+             }
+             if ($request_URI == '/bi-demo/index.php?concept=2') {
+                include 'scheduler_concept_2.inc.php';
+             }
              // elseif ($request_URI == '/hc3-demo/needs-assessment.php') {
              //     include 'content-needs-assesment.inc.php';
              // }
@@ -29,7 +32,7 @@
              // {
              //    include 'content-diabetes-non-accr.inc.php';
              // }
-             include 'content.inc.php';
+             //include 'scheduler_concept_1.inc.php';
              echo '</div>';
              // END PAGE CONTENT -->
 
