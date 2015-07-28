@@ -4,10 +4,10 @@ function javascriptLoad() {
 
     $output='';
 
-    $output.='<!-- START PRELOADS -->';
-    $output.='<audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>';
-    $output.='<audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>';
-    $output.='<!-- END PRELOADS -->';
+    // $output.='<!-- START PRELOADS -->';
+    // $output.='<audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>';
+    // $output.='<audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>';
+    // $output.='<!-- END PRELOADS -->';
     $output.='<!-- START SCRIPTS -->';
     $output.='<!-- START PLUGINS -->';
     $output.='<script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>';

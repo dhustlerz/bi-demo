@@ -1126,15 +1126,15 @@ $output.='<div class=" container margin-top-pt-4 " style="height:auto; padding-l
   $output.='<div class="col-md-6 col-xs-6">';
 
     $output.='<h4 class="font-size-18" style="margin: 10px; margin-bottom: 34px; font-weight: 300;">Pick your Date & Time</h4>';
-    $output.='<div class="row" style="border: 1px solid;">';
-      $output.='<div class="datepicker "></div>';
+    $output.='<div class="row" style="border:4px solid #F5F5F5;">';
+      $output.='<div id="" class="datepicker ll-skin-melon "></div>';
     $output.='</div>';
     //Select Program starts
     $output.='<div class="start-time-duration-program row margin-bottom-24 ">';
         $output.='<h4 class="font-size-18" style="margin: 10px; margin-bottom: 34px; font-weight: 300;">Pick your Program</h4>';
 
         $output.='<div class="btn-group dropup" style="min-width:100%;">';
-          $output.='<a href="#" style="min-width:100%; border-radius: 0px;" data-toggle="dropdown" class="btn btn-primary dropdown-toggle ">Select Program  <span class="caret"></span></a>';
+          $output.='<a href="#" style="min-width:100%; border-radius: 0px; font-size:18px; font-weight:300; height:30px;" data-toggle="dropdown" class="btn btn-primary dropdown-toggle ">Select Program  <span class="caret"></span></a>';
             $output.='<ul class="dropdown-menu" role="menu">';
 
             for ( $i = 1 ; $i <= 5 ; $i ++) {
@@ -1155,7 +1155,7 @@ $output.='<div class=" container margin-top-pt-4 " style="height:auto; padding-l
     //Select Time and Duration
     $output.='<div class="start-time-duration-program row">';
       // Select Time
-      $output.='<div class="row margin-top-14">';
+      $output.='<div class="row margin-top-36">';
         $output.='<div class="col-md-6 col-xs-6 text-center">';
           $output.='<label  class="font-weight-400 font-size-16 control-label ">Start Time :</label>';
           //$output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:100px">Start Time </a>';
