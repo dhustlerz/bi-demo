@@ -11,7 +11,7 @@
 
              // PAGE CONTENT -->
              echo'<div class="page-content">';
-             if ($request_URI == '/bi-demo/index.php?concept=1' || $request_URI == '/bi-demo/index.php' ) {
+             if ($request_URI == '/bi-demo/index.php?concept=1' || $request_URI == '/bi-demo/index.php' || $request_URI == '/bi-demo/'  ) {
                 include 'scheduler_concept_1.inc.php';
              }
              if ($request_URI == '/bi-demo/index.php?concept=2') {
