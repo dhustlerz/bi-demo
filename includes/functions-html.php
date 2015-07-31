@@ -971,7 +971,7 @@ return $output;
 function selectDateTime(){
 
 $output = '';
-$output.='<div class="container-date-time container margin-top-pt-8 " style="height:auto; padding-left:10%; padding-right:10%;" >';
+$output.='<div class="container-date-time container margin-top-pt-4" style="height:auto; padding-left:10%; padding-right:10%;" >';
 
   // Date Calender Select
   $output.='<div class="col-md-6 ">';
