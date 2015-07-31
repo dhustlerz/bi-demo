@@ -275,7 +275,7 @@ $output='';
 
         $output.='<div class=" min-heigth-800">';
           //$output.='<h3>Default Wizard</h3>';
-          $output.='<div class="wizard">';
+          $output.='<div class="smartwizard wizard ">';
             $output.='<ul class="bg-0076A3" style="padding-bottom:0px; padding-left:4%; padding-right:0px; padding-top:9px;">';
 
               $output.='<li>';
@@ -324,26 +324,26 @@ $output='';
 
             $output.='<div id="step-1">';
             //Step 2 Starts
-              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
-                $output.='<h4 class="font-size-18">Step 1. Select Program</h4>';
-                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+              $output.='<div class="titleWizardSchedule padding-10 col-md-12 bg-ffffff">';
+                $output.='<h4 class="font-size-18 margin-0">Step 1. Select Program</h4>';
+             /*   $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
                  Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
                   Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
-                   </p>';
-                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+                   </p>';*/
+                    //$output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
 
 
               $output.='<div class="row">';
-                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
               $output.='</div>';
 
 
 
               $output.='<div class="row">';
-                $output.='<div class="padding-20 col-md-12 ">';
-                  $output.='<div class="panel" style="border: 20px solid #F5F5F5;">';
+                $output.='<div class="padding-10 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 5px solid #F5F5F5;">';
 
                     $output.= fakeProgramList();
 
@@ -357,26 +357,26 @@ $output='';
 
             $output.='<div id="step-2">';
             //Step 2 Starts
-              $output.='<div class="padding-20 col-md-12 bg-ffffff ">';
-                $output.='<h4 class="font-size-18">Step 2. Select Speaker</h4>';
-                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+              $output.='<div class="titleWizardSchedule padding-10 col-md-12 bg-ffffff ">';
+                $output.='<h4 class="font-size-18 margin-0">Step 2. Select Speaker</h4>';
+         /*       $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
                  Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
                   Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
-                   </p>';
-                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+                   </p>';*/
+                   // $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
 
 
               $output.='<div class="row">';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
               $output.='</div>';
 
 
 
               $output.='<div class="row">';
-                $output.='<div class="padding-20 col-md-12 ">';
-                  $output.='<div class="panel" style="border: 20px solid #F5F5F5;">';
+                $output.='<div class="padding-10 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 5px solid #F5F5F5;">';
 
                     $output.= fakeSpeakerList();
 
@@ -390,26 +390,26 @@ $output='';
 
             $output.='<div id="step-3">';
             //Step 3 Starts
-              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
-                $output.='<h4 class="font-size-18">Step 3. Select Date and Time</h4>';
-                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+              $output.='<div class="titleWizardSchedule padding-10 col-md-12 bg-ffffff">';
+                $output.='<h4 class="font-size-18 margin-0">Step 3. Select Date and Time</h4>';
+          /*      $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
                  Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
                   Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
-                   </p>';
-                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+                   </p>';*/
+                   // $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
 
 
               $output.='<div class="row">';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
               $output.='</div>';
 
 
 
               $output.='<div class="row">';
-                $output.='<div class="padding-20 col-md-12 ">';
-                  $output.='<div class="panel" style="border: 20px solid #F5F5F5;min-height: 600px;">';
+                $output.='<div class="padding-10 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 5px solid #F5F5F5;min-height: 500px;">';
 
                     $output.= selectDateTime();
 
@@ -421,34 +421,34 @@ $output='';
 
             $output.='<div id="step-4">';
             //Step 4 Starts
-              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
-                $output.='<h4 class="font-size-18">Step 4. Select Location & Add Attendees</h4>';
-                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+              $output.='<div class="titleWizardSchedule padding-10 col-md-12 bg-ffffff">';
+                $output.='<h4 class="font-size-18 margin-0">Step 4. Select Location & Add Attendees</h4>';
+          /*      $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
                  Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
                   Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
-                   </p>';
-                    $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+                   </p>';*/
+                   // $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
 
 
               $output.='<div class="row">';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
               $output.='</div>';
 
 
 
               $output.='<div class="row">';
-                $output.='<div class="padding-20 col-md-12 ">';
-                  $output.='<div class="panel" style="border: 20px solid #F5F5F5; padding: 25px; min-height: 600px;">';
+                $output.='<div class="padding-10 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 5px solid #F5F5F5; padding: 25px; /*min-height: 600px;*/">';
 
                     $output.='<div class="row">';
-                      $output.='<h4 class="font-size-18" style="  margin: 10px; margin-bottom: 34px; font-weight: 300;">Location Information</h4>';
+                      $output.='<h4 class="font-size-18" style="  margin: 5px; margin-bottom: 30px; font-weight: 300;">Location Information</h4>';
                       $output.= selectLocation();
                     $output.='</div>';
 
                     $output.='<div class="row">';
-                      $output.='<h4 class="font-size-18" style="  margin: 10px; margin-bottom: 34px; margin-top: 34px; font-weight: 300;">Invite Attendees</h4>';
+                      $output.='<h4 class="font-size-18" style="  margin: 5px; margin-bottom: 20px; margin-top: 34px; font-weight: 300;">Invite Attendees</h4>';
                       $output.= inviteParticipants();
                     $output.='</div>';
 
@@ -459,60 +459,28 @@ $output='';
             //Step 4 ends
             $output.='</div>';
 
-            // $output.='<div id="step-5">';
-
-            // //Step 5 Starts
-            //   $output.='<div class="padding-20 col-md-12 ">';
-            //     $output.='<h4 class="font-size-18">Step 5. Invite Participants</h4>';
-            //     $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
-            //     nteger ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
-            //     Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
-            //      </p>';
-            //     $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
-            //   $output.='</div>';
-
-
-            //   $output.='<div class="row">';
-            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
-            //   $output.='</div>';
-
-
-            //   $output.='<div class="row">';
-            //     $output.='<div class="padding-20 col-md-12 ">';
-            //       $output.='<div class="panel" style="border: 20px solid #F5F5F5; padding:25px; padding:25px; /*padding-top: 120;*/ min-height: 600px;">';
-
-            //         $output.= inviteParticipants();
-
-            //       $output.='</div>';
-            //     $output.='</div>';
-            //   $output.='</div>';
-            // //Step 5 Starts
-
-            // $output.='</div>';
-
             $output.='<div id="step-5">';
 
             //Step 5 Starts
-              $output.='<div class="padding-20 col-md-12 bg-ffffff ">';
-                $output.='<h4 class="font-size-18">Step 6. Review and Submit</h4>';
-                $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+              $output.='<div class="titleWizardSchedule padding-10 col-md-12 bg-ffffff ">';
+                $output.='<h4 class="font-size-18 margin-0">Step 6. Review and Submit</h4>';
+          /*      $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
                 nteger ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
                 Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
-                 </p>';
-                $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+                 </p>';*/
+               // $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
 
 
               $output.='<div class="row">';
-                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
               $output.='</div>';
 
 
               $output.='<div class="row">';
-                $output.='<div class="padding-20 col-md-12 ">';
-                  $output.='<div class="panel" style="border: 20px solid #F5F5F5; ">';
+                $output.='<div class="padding-10 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 5px solid #F5F5F5; ">';
 
                     $output.= reviewAndSubmit();
                     $output.='<div class=" margin-bottom-24 col-md-6 col-xs-6"> <button  type="button" style="border-radius:0px;" class= "float-right btn btn-primary ">Submit</span></button> </div>';
@@ -552,25 +520,25 @@ $output='';
 
         $output.='<div class=" min-heigth-800">';
           //$output.='<h3>Default Wizard</h3>';
-          $output.='<div class="wizard">';
-            $output.='<ul class="bg-0076A3" style="padding-bottom:0px; padding-left:4%; padding-right:0px; padding-top:9px;">';
+          $output.='<div class="swMain wizard ">';
+            $output.='<ul class="col-md-12 bg-0076A3" style=" padding:0px 10px 0px 10px; margin:0px;">';
 
-              $output.='<li>';
-                $output.='<a href="#step-1">';
+              $output.='<li class="col-md-3">';
+                $output.='<a class="col-md-12" href="#step-1">';
                   $output.='<span class="stepNumber">1</span>';
                   $output.='<span class="stepDesc">Speaker<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
-              $output.='<li>';
-                $output.='<a href="#step-2">';
+              $output.='<li class="col-md-3">';
+                $output.='<a class="col-md-12" href="#step-2">';
                   $output.='<span class="stepNumber">2</span>';
                   $output.='<span class="stepDesc">Meeting Details<br /><small></small></span>';
                 $output.='</a>';
               $output.='</li>';
 
-              $output.='<li>';
-                $output.='<a href="#step-3">';
+              $output.='<li class="col-md-3">';
+                $output.='<a class="col-md-12" href="#step-3">';
                   $output.='<span class="stepNumber">3</span>';
                   $output.='<span class="stepDesc">Location & Invite<br /><small></small></span>';
                 $output.='</a>';
@@ -579,12 +547,12 @@ $output='';
               // $output.='<li>';
               // $output.='<a href="#step-5">';
               //     $output.='<span class="stepNumber">5</span>';
-              //     $output.='<span class="stepDesc text-center">Participants<br /><small></small></span>';
+              //     $output.='<span class="stepDesc text-center">Participwants<br /><small></small></span>';
               //   $output.='</a>';
               // $output.='</li>';
 
-              $output.='<li>';
-              $output.='<a  href="#step-4">';
+              $output.='<li class="col-md-3">';
+              $output.='<a class="col-md-12"  href="#step-4">';
                   $output.='<span class="stepNumber">4</span>';
                   $output.='<span class="stepDesc" >Submit<br /><small></small></span>';
                 $output.='</a>';
@@ -594,7 +562,7 @@ $output='';
 
             $output.='<div id="step-1">';
             //Step 2 Starts
-              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
+             /* $output.='<div class="padding-20 col-md-12 bg-ffffff">';
                 $output.='<h4 class="font-size-18">Step 1. Select Speaker</h4>';
                 $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
                  Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
@@ -602,18 +570,18 @@ $output='';
                    </p>';
                     $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
+*/
+
+              //$output.='<div class="row">';
+                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
+              //$output.='</div>';
+
 
 
               $output.='<div class="row">';
-                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
-              $output.='</div>';
-
-
-
-              $output.='<div class="row">';
-                $output.='<div class="padding-20 col-md-12 ">';
-                  $output.='<div class="panel" style="border: 20px solid #F5F5F5;">';
+                $output.='<div class="padding-10 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 5px solid #F5F5F5;">';
 
                     $output.= fakeSpeakerListWithImage();
 
@@ -624,43 +592,9 @@ $output='';
             $output.='</div>';
 
 
-
-            // $output.='<div id="step-2">';
-            // //Step 2 Starts
-            //   $output.='<div class="padding-20 col-md-12 bg-ffffff ">';
-            //     $output.='<h4 class="font-size-18">Step 2. Details</h4>';
-            //     $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
-            //      Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
-            //       Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
-            //        </p>';
-            //         $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
-            //   $output.='</div>';
-
-
-            //   $output.='<div class="row">';
-            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
-            //   $output.='</div>';
-
-
-
-            //   $output.='<div class="row">';
-            //     $output.='<div class="padding-20 col-md-12 ">';
-            //       $output.='<div class="panel" style="border: 20px solid #F5F5F5;">';
-
-            //         $output.= fakeSpeakerList();
-
-            //       $output.='</div>';
-            //     $output.='</div>';
-            //   $output.='</div>';
-
-            // $output.='</div>';
-
-
-
             $output.='<div id="step-2">';
             //Step 3 Starts
-              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
+            /*  $output.='<div class="padding-20 col-md-12 bg-ffffff">';
                 $output.='<h4 class="font-size-18">Step 2. Select Date & Time and Program</h4>';
                 $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
                  Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
@@ -668,18 +602,18 @@ $output='';
                    </p>';
                     $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
-
+*/
 
               $output.='<div class="row">';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
               $output.='</div>';
 
 
 
               $output.='<div class="row">';
-                $output.='<div class="padding-20 col-md-12 ">';
-                  $output.='<div class="panel" style="border: 20px solid #F5F5F5;min-height: 600px;">';
+                $output.='<div class="padding-10 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 5px solid #F5F5F5;min-height: 600px;">';
 
                     $output.= selectDateTimeProgram();
 
@@ -691,26 +625,26 @@ $output='';
 
             $output.='<div id="step-3">';
             //Step 4 Starts
-              $output.='<div class="padding-20 col-md-12 bg-ffffff">';
+              /*$output.='<div class="padding-20 col-md-12 bg-ffffff">';
                 $output.='<h4 class="font-size-18">Step 3. Select Location & Add Attendees</h4>';
                 $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
                  Integer ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
                   Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
                    </p>';
                     $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
-              $output.='</div>';
+              $output.='</div>';*/
 
 
               $output.='<div class="row">';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+                $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
               $output.='</div>';
 
 
 
               $output.='<div class="row">';
-                $output.='<div class="padding-20 col-md-12 ">';
-                  $output.='<div class="panel" style="border: 20px solid #F5F5F5; padding: 25px; min-height: 600px;">';
+                $output.='<div class="padding-10 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 5px solid #F5F5F5; padding: 25px; min-height: 600px;">';
 
                     $output.='<div class="row">';
                       $output.='<h4 class="font-size-18" style="  margin: 10px; margin-bottom: 34px; font-weight: 300;">Location Information</h4>';
@@ -743,8 +677,8 @@ $output='';
 
 
             //   $output.='<div class="row">';
-            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
             //   $output.='</div>';
 
 
@@ -764,7 +698,7 @@ $output='';
             $output.='<div id="step-4">';
 
             //Step 5 Starts
-              $output.='<div class="padding-20 col-md-12 bg-ffffff ">';
+             /* $output.='<div class="padding-20 col-md-12 bg-ffffff ">';
                 $output.='<h4 class="font-size-18">Step 4. Review and Submit</h4>';
                 $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
                 nteger ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
@@ -772,17 +706,17 @@ $output='';
                  </p>';
                 $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
               $output.='</div>';
-
+*/
 
               $output.='<div class="row">';
-                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px;" ></span></button> </div>';
-                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px;" ></span></button> </div>';
+                $output.='<div class="col-md-12 col-xs-12"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+                //$output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
               $output.='</div>';
 
 
               $output.='<div class="row">';
-                $output.='<div class="padding-20 col-md-12 ">';
-                  $output.='<div class="panel" style="border: 20px solid #F5F5F5; ">';
+                $output.='<div class="padding-10 col-md-12 ">';
+                  $output.='<div class="panel" style="border: 5px solid #F5F5F5; ">';
 
                     $output.= reviewAndSubmit();
                     $output.='<div class=" margin-bottom-24 col-md-6 col-xs-6"> <button  type="button" style="border-radius:0px;" class= "float-right btn btn-primary ">Submit</span></button> </div>';
@@ -815,7 +749,7 @@ $output='';
       $output.='<div class="form-group">';
 
       $output.='<label class="col-md-2 col-xs-12 control-label control-label-extent">Venue*</label>';
-        $output.='<div class="col-md-9 col-xs-12">';
+        $output.='<div class="col-md-9 col-xs-12 ">';
            $output.='<span href="#" data-toggle="dropdown" class="form-control dropdown-toggle">Hospital<span class="caret"></span></span>';
                 $output.='<ul class="dropdown-menu" role="menu">';
                   $output.='<li><a href="#">Hospital</a></li>';
@@ -905,7 +839,7 @@ $output='';
     $output.='<div class="col-md-11 col-xs-12 margin-left-10">';
       // $output.='<div class="input-group">';
           // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
-          $output.='<input type="textarea" style="min-height:100px;" class="tagsinput form-control" value="Chris Dodd,Dong,Jp"/>';
+          $output.='<input type="textarea" style="height:100px;" class="tagsinput form-control" value="Chris Dodd,Dong,Jp"/>';
           //$output.='<input type="text" class="min-heigth-80 form-control"/>';
       // $output.='</div>';
       $output.='<span class="help-block">Input attendee name and press ENTER</span>';
@@ -926,7 +860,7 @@ function reviewAndSubmit(){
 $output='';
 
 $output.='<form class="form-horizontal">';
-  $output.='<div class=" margin-top-pt-4">';
+  $output.='<div class=" margin-top-pt-2">';
 
     $output.='<div class="form-group">';
         $output.='<div class="col-md-12 col-xs-12">';
@@ -944,7 +878,7 @@ $output.='<form class="form-horizontal">';
         $output.='<span class="padding-right-pt-10 font-size-14 col-md-2 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
-    $output.='<hr class="width-pt-80">';
+    $output.='<hr class="width-pt-80 margin-14">';
 
         $output.='<div class="form-group">';
         $output.='<div class="col-md-12 col-xs-12">';
@@ -963,7 +897,7 @@ $output.='<form class="form-horizontal">';
         $output.='<span class="padding-right-pt-10 font-size-14 col-md-2 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
-    $output.='<hr class="width-pt-80">';
+    $output.='<hr class="width-pt-80 margin-14">';
 
 
       $output.='<div class="form-group">';
@@ -982,7 +916,7 @@ $output.='<form class="form-horizontal">';
         $output.='<span class="padding-right-pt-10 font-size-14 col-md-2 col-xs-6"><span class="color-f34662 margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
-    $output.='<hr class="width-pt-80">';
+    $output.='<hr class="width-pt-80 margin-14">';
 
 
       $output.='<div class="form-group">';
@@ -1004,7 +938,7 @@ $output.='<form class="form-horizontal">';
         $output.='<span class="padding-right-pt-10 font-size-14 col-md-2 col-xs-6"><span class="color-f34662  margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
-    $output.='<hr class="width-pt-80">';
+    $output.='<hr class="width-pt-80 margin-14">';
 
 
       $output.='<div class="form-group">';
@@ -1023,7 +957,7 @@ $output.='<form class="form-horizontal">';
         $output.='<span class="padding-right-pt-10 font-size-14 col-md-2 col-xs-6"><span class="color-f34662  margin-right-pt-70 float-right line-height-2">edit</span>';
         $output.='</div>';
     $output.='</div>';
-    $output.='<hr class="width-pt-80">';
+    $output.='<hr class="width-pt-80 margin-14">';
 
 
   $output.='</div>';
@@ -1037,16 +971,27 @@ return $output;
 function selectDateTime(){
 
 $output = '';
-$output.='<div class=" margin-top-pt-4 " style="height:auto; padding-left:10%; padding-right:10%;" >';
+$output.='<div class="container-date-time container margin-top-pt-8 " style="height:auto; padding-left:10%; padding-right:10%;" >';
 
   // Date Calender Select
-  $output.='<div class="col-md-6 col-xs-6">';
-    $output.='<div class="row" style="border: 1px solid;">';
+  $output.='<div class="col-md-6 ">';
+    $output.='<div class="row" style="border: 3px solid #F5F5F5 ;">';
       $output.='<div class="datepicker "></div>';
     $output.='</div>';
-    //Select Time and Duration
-    $output.='<div class="start-time-duration row">';
 
+
+  $output.='</div>';
+
+
+
+  $output.='<div class="col-md-6 ">';
+
+    //Select Time and Duration
+
+    $output.='<div class="start-time-duration row">';
+      $output.='<div class="row" style="background:#0076A3">';
+        $output.='<h4 class="color-fff font-size-18 padding-top-9 text-center">Select Time & Duration</h4>';
+      $output.='</div>';
 
       // Select Time
       $output.='<div class="row margin-top-14">';
@@ -1090,22 +1035,17 @@ $output.='<div class=" margin-top-pt-4 " style="height:auto; padding-left:10%; p
     $output.='</div>';
     // Select Time and Duration End
 
-  $output.='</div>';
-
-  //Meeting Details Starts
-  $output.='<div class="col-md-6 col-xs-6">';
-
-
-      $output.='<div class="row" style="background:#0076A3">';
+    //Meeting Details Starts
+      $output.='<div class="row margin-top-10" style="background:#0076A3">';
         $output.='<h4 class="color-fff font-size-18 padding-top-9 text-center">Selected Date & Times</h4>';
       $output.='</div>';
 
 
 
-      $output.='<div class="row border-1-a3bad9 padding-bottom-275" style="background:#fff; border: 1px solid; padding-left: 30%; ">';
-        $output.='<h4 class="font-weight-400 color-000 font-size-16 margin-top-24 ">Meeting Date:</h4>';
-        $output.='<h4 class="font-weight-400 color-000 font-size-16 ">Start Time:</h4>';
-        $output.='<h4 class="font-weight-400 color-000 font-size-16 ">Meeting Duration:</h4>';
+      $output.='<div class="row border-1-a3bad9 " style="background:#fff; border: 3px solid #F5F5F5 ; padding-left: 30%; ">';
+        $output.='<h4 class="font-weight-300  font-size-16 margin-top-10 ">Meeting Date:</h4>';
+        $output.='<h4 class="font-weight-300  font-size-16 ">Start Time:</h4>';
+        $output.='<h4 class="font-weight-300  font-size-16 ">Meeting Duration:</h4>';
       $output.='</div>';
 
 
@@ -1120,21 +1060,17 @@ return $output;
 function selectDateTimeProgram(){
 
 $output = '';
-$output.='<div class=" container margin-top-pt-4 " style="height:auto; padding-left:10%; padding-right:10%;" >';
+$output.='<div class=" container margin-top-pt-2 " style="height:auto; padding-left:10%; padding-right:10%;" >';
 
-  // Date Calender Select
+
   $output.='<div class="col-md-6 col-xs-6">';
 
-    $output.='<h4 class="font-size-18" style="margin: 10px; margin-bottom: 34px; font-weight: 300;">Pick your Date & Time</h4>';
-    $output.='<div class="row" style="border:4px solid #F5F5F5;">';
-      $output.='<div id="" class="datepicker ll-skin-melon "></div>';
-    $output.='</div>';
-    //Select Program starts
+   //Select Program starts
     $output.='<div class="start-time-duration-program row margin-bottom-24 ">';
-        $output.='<h4 class="font-size-18" style="margin: 10px; margin-bottom: 34px; font-weight: 300;">Pick your Program</h4>';
+        $output.='<h4 class="font-size-18" style="margin: 10px; margin-bottom: 30px; font-weight: 300;">Pick your Program</h4>';
 
-        $output.='<div class="btn-group dropup" style="min-width:100%;">';
-          $output.='<a href="#" style="min-width:100%; border-radius: 0px; font-size:18px; font-weight:300; height:30px;" data-toggle="dropdown" class="btn btn-primary dropdown-toggle ">Select Program  <span class="caret"></span></a>';
+        $output.='<div class="btn-group" style="min-width:100%;">';
+          $output.='<a href="#" style="height: 40px; padding-top:8px;  min-width:100%; border-radius: 0px; font-size:18px; font-weight:300;" data-toggle="dropdown" class="btn btn-primary dropdown-toggle ">Select Program  <span class="caret"></span></a>';
             $output.='<ul class="dropdown-menu" role="menu">';
 
             for ( $i = 1 ; $i <= 5 ; $i ++) {
@@ -1147,15 +1083,21 @@ $output.='<div class=" container margin-top-pt-4 " style="height:auto; padding-l
     $output.='</div>';
     // Select Program ends
 
+    // Date Calender Select
+    $output.='<h4 class="font-size-18" style="margin: 10px; margin-bottom: 34px; font-weight: 300;">Select Date</h4>';
+    $output.='<div class="row" style="border:4px solid #F5F5F5;">';
+      $output.='<div id="" class="datepicker ll-skin-melon "></div>';
+    $output.='</div>';
+
   $output.='</div>';
 
   //Meeting Details Starts
   $output.='<div class="col-md-6 col-xs-6">';
-
     //Select Time and Duration
     $output.='<div class="start-time-duration-program row">';
+    $output.='<h4 class="font-size-18" style="padding-left: 40px; margin: 10px; margin-bottom: 30px; font-weight: 300;">Select Time and Duration</h4>';
       // Select Time
-      $output.='<div class="row margin-top-36">';
+      $output.='<div class="row ">';
         $output.='<div class="col-md-6 col-xs-6 text-center">';
           $output.='<label  class="font-weight-400 font-size-16 control-label ">Start Time :</label>';
           //$output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:100px">Start Time </a>';
@@ -1231,6 +1173,38 @@ return $output;
                 // $output.='</div>';
 
               //}
+
+            // $output.='<div id="step-5">';
+
+            // //Step 5 Starts
+            //   $output.='<div class="padding-20 col-md-12 ">';
+            //     $output.='<h4 class="font-size-18">Step 5. Invite Participants</h4>';
+            //     $output.='<p class="font-size-14 color-000">This is non libero bibendum, scelerisque arcu id, placerat nunc.
+            //     nteger ullamcorper rutrum dui eget porta. Fusce enim dui, pulvinar a augue nec, dapibus hendrerit mauris.
+            //     Praesent efficitur, elit non convallis faucibus, enim sapien suscipit mi, sit amet fringilla felis arcu id sem.
+            //      </p>';
+            //     $output.='<div class="col-md-12" style=" background-color:#0076A3; margin-top: 10px; height:1px;   "></div>';
+            //   $output.='</div>';
+
+
+            //   $output.='<div class="row">';
+            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-previous float-left btn "><span class="glyphicon glyphicon-arrow-left" style="font-size: 20px;" ></span></button> </div>';
+            //     $output.='<div class="col-md-6 col-xs-6"> <button  type="button" class="action-btn-wizard-next float-right btn "><span class="glyphicon glyphicon-arrow-right" style="font-size: 20px;" ></span></button> </div>';
+            //   $output.='</div>';
+
+
+            //   $output.='<div class="row">';
+            //     $output.='<div class="padding-20 col-md-12 ">';
+            //       $output.='<div class="panel" style="border: 20px solid #F5F5F5; padding:25px; padding:25px; /*padding-top: 120;*/ min-height: 600px;">';
+
+            //         $output.= inviteParticipants();
+
+            //       $output.='</div>';
+            //     $output.='</div>';
+            //   $output.='</div>';
+            // //Step 5 Starts
+
+            // $output.='</div>';
     ?>
 
 

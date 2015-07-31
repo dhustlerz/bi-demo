@@ -78,7 +78,7 @@ function fakeSpeakerListWithImage(){
          $output.='<thead><tr><th style="width: 10%; padding-left:2%;;"></th><th>Speaker Name</th><th>Specialty</th><th>Location</th><th style="width: 140px;"></th></tr></thead>';
           $output.='<tbody class="font-size-14">';
 
-            for ($speakerCount=1; $speakerCount<=8; $speakerCount++){
+            for ($speakerCount=1; $speakerCount<=6; $speakerCount++){
               $output.='<tr><td >';
                 $output.='<div class="padding-left-20">';
                   $output.='<span  style="font-size: 40px; " class="doctor-profile fa fa-user-md"></span>';

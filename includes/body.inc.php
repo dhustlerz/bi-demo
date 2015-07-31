@@ -1,5 +1,5 @@
 <!-- START PAGE CONTAINER -->
-        <div  class="page-container">
+        <div  class="page-container page-navigation-toggled page-container-wide ">
 
             <?php
             $request_URI = "$_SERVER[REQUEST_URI]";

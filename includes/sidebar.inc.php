@@ -7,7 +7,7 @@ $sidebar_output.='<div class="page-sidebar bg-ffffff" style="height: 50px;">';
     /**
      * START X-NAVIGATION
      */
-    $sidebar_output.='<ul class="x-navigation page-navigation-top-fixed bf-ffffff" >';
+    $sidebar_output.='<ul class="x-navigation page-navigation-top-fixed bf-ffffff x-navigation-minimized" >';
 
       $sidebar_output.='<li class="xn-logo">';
 
@@ -49,10 +49,10 @@ $sidebar_output.='<div class="page-sidebar bg-ffffff" style="height: 50px;">';
         $sidebar_output.='<li class="menu active xn-openable ">';
             $sidebar_output.='<a href="index.php"><span class="fa fa-desktop"></span><span class="xn-text">Scheduler</span></a>';
 
-              $sidebar_output.='<ul>';
-                $sidebar_output.='<li class="menu"><a href="index.php?concept=1">Concept 1</a></li>';
-                $sidebar_output.='<li class="menu"><a href="index.php?concept=2">Concept 2</a></li>';
-              $sidebar_output.='</ul>';
+              // $sidebar_output.='<ul>';
+              //   $sidebar_output.='<li class="menu"><a href="index.php?concept=1">Concept 1</a></li>';
+              //   $sidebar_output.='<li class="menu"><a href="index.php?concept=2">Concept 2</a></li>';
+              // $sidebar_output.='</ul>';
 
         $sidebar_output.='</li>';
 

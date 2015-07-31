@@ -1,0 +1,250 @@
+/* BOOTSTRAP DATEPICKER */
+div.datepicker {
+  /*padding: 4px;*/
+  padding-bottom: 10px;
+  /*padding: 5px;*/
+/* border: 1px solid ;*/
+/*  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.1);*/
+}
+div.datepicker > div {
+
+  display: none;
+}
+div.datepicker table {
+
+  width: 100%;
+  margin: 0;
+}
+div.datepicker td,
+div.datepicker th {
+  text-align: center;
+  //background-color: #0076A3;
+  width: 20px;
+  height: 20px;
+}
+div.datepicker td.day:hover {
+  background: #F5F5F5;
+  cursor: pointer;
+}
+div.datepicker td.day.disabled {
+  color: #CCC;
+}
+div.datepicker td.old,
+div.datepicker td.new {
+
+  color: #999;
+}
+div.datepicker td.active,
+div.datepicker td.active:hover {
+  background: #95B75D;
+  color: #fff;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+div.datepicker td span {
+  display: block;
+  //width: 31%;
+  height: 54px;
+  line-height: 54px;
+  float: left;
+  margin: 2px;
+  cursor: pointer;
+}
+div.datepicker td span:hover {
+  background: #F5F5F5;
+}
+div.datepicker td span.active {
+  background: #0076A3;
+  color: #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+div.datepicker td span.old {
+  color: #999;
+}
+div.datepicker th.switch {
+  width: 145px;
+}
+div.datepicker th.next,
+div.datepicker th.prev {
+  font-size: 12px;
+  background: #fff;
+}
+div.datepicker thead tr:first-child th {
+  background-color: #0076A3;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 0px;
+}
+div.datepicker thead tr:first-child th:hover {
+  background: #0076A3;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
+.smartwizard .anchor {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  display: block;
+  position: relative;
+  width: 113%;
+}
+.smartwizard .anchor:after {
+  content: " ";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  background: #D5D5D5;
+  z-index: 1;
+}
+.smartwizard .anchor li {
+  float: left;
+  display: block;
+}
+.smartwizard .anchor li a {
+  font-size: 14px;
+  color: #fff;
+  /*color: #656d78;*/
+  text-decoration: none;
+  display: block;
+  line-height: 18px;
+  padding: 10px 20px 15px 0px;
+  position: relative;
+}
+.smartwizard .anchor li a .stepNumber {
+  display: none;
+}
+.smartwizard .anchor li a .stepDesc {
+  font-weight: 400;
+  margin-left: -5%;
+}
+.smartwizard .anchor li a .stepDesc small {
+  color: #999;
+  font-weight: 300;
+}
+.smartwizard .anchor li a:before {
+  content: " ";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #D5D5D5;
+  z-index: 2;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.smartwizard .anchor li a:after {
+  content: " ";
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 22px;
+  height: 22px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #FFF;
+  border: 3px solid #D5D5D5;
+  z-index: 3;
+  text-align: center;
+  line-height: 17px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  color: #DDD;
+}
+.smartwizard .anchor li a.done:after {
+  border-color: #95b75d;
+  content: "\f00c";
+  font-family: FontAwesome;
+  color: #95b75d;
+  font-size: 10px;
+}
+.smartwizard .anchor li a.done:before {
+  background: #95b75d;
+}
+.smartwizard .anchor li a.error:after {
+  border-color: #b64645;
+  content: "\f00d";
+  font-family: FontAwesome;
+  color: #b64645;
+  font-size: 10px;
+}
+.smartwizard .anchor li a.error:before {
+  background: #b64645;
+}
+.smartwizard .anchor li a.selected:after {
+  border-color:   background: #0076A3;
+  background: #0076A3;
+  content: "\f0da";
+  font-family: FontAwesome;
+  background: #0076A3;
+  font-size: 13px;
+  padding-left: 2px;
+}
+.smartwizard .anchor li a.selected:before {
+  background:   background: #0076A3;
+  background: #0076A3;
+#0076A3;
+}
+.smartwizard .stepContainer,
+.smartwizard .actionBar {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+.smartwizard .actionBar {
+  margin-top: 20px;
+}
+.smartwizard .actionBar .btn.pull-right {
+  margin-left: 5px;
+}
+.smartwizard .actionBar .btn-primary {
+  display: none;
+}
+.smartwizard .actionBar .loader {
+  display: none;
+}
+.smartwizard .anchor.steps_1 li {
+ // width: 100%;
+}
+.smartwizard .anchor.steps_2 li {
+  width: 50%;
+}
+.smartwizard .anchor.steps_3 li {
+  width: 33.333333%;
+}
+.smartwizard .anchor.steps_4 li {
+  width: 25%;
+}
+.smartwizard .anchor.steps_5 li {
+  width: 20%;
+}
+.smartwizard .anchor.steps_6 li {
+  width: 16.666666%;
+}
+.smartwizard .anchor.steps_7 li {
+  width: 14.285714%;
+}
+.smartwizard .anchor.steps_8 li {
+  width: 12.5%;
+}
