@@ -16,6 +16,12 @@
 @import "calender-date-picker/cangas.datepicker.css";
 @import "bootstrap-plugin.css";
 
+/*
+ * http://www.jqueryscript.net/time-clock/KitKat-Clock-Style-Timer-Picker-with-jQuery-CSS3-KitKatClock.html
+ * For testing purpose
+ */
+@import "clockwidget/KitKatClock.css";
+
 
 /* PREDEFINED CLASSES */
 .clearfix {

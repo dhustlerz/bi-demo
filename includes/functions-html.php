@@ -1099,21 +1099,31 @@ $output.='<div class=" container margin-top-pt-2 " style="height:auto; padding-l
       // Select Time
       $output.='<div class="row ">';
         $output.='<div class="col-md-6 col-xs-6 text-center">';
-          $output.='<label  class="font-weight-400 font-size-16 control-label ">Start Time :</label>';
+        //$output='<input type="text" id="timeSelectWidgetClock">';
+      //   $output.='<div class="form-group">';
+      //   $output.='<label class="col-md-6 font-weight-400 font-size-16  control-label">Time:</label>';
+      //     $output.='<div class="col-md-6 ">';
+      //       // $output.='<div class="input-group">';
+      //           // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
+      //           $output.='<input readonly="true" id="timeSelectWidgetClock" type="text" class="form-control" data-kitkat-active="true"/>';
+      //       // $output.='</div>';
+      //   $output.='</div>';
+      // $output.='</div>';
+
+        $output.='<label  class="font-weight-400 font-size-16 control-label ">Start Time :</label>';
           //$output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:100px">Start Time </a>';
         $output.='</div>';
         $output.='<div class="col-md-3 col-xs-2">';
           $output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="">Time <span class="caret"></span></a>';
           $output.= selectTime();
         $output.='</div>';
-
         $output.='<div class="col-md-3 col-xs-2">';
 
-          $output.='<a href="#" style="" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">AM <span class="caret"></span></a>';
-          $output.='<ul class="dropdown-menu" role="menu">';
-            $output.='<li><a href="#">AM</a></li>';
-            $output.='<li><a href="#">PM</a></li>';
-          $output.='</ul>';
+        $output.='<a href="#" style="" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">AM <span class="caret"></span></a>';
+        $output.='<ul class="dropdown-menu" role="menu">';
+          $output.='<li><a href="#">AM</a></li>';
+          $output.='<li><a href="#">PM</a></li>';
+        $output.='</ul>';
 
         $output.='</div>';
       $output.='</div>';

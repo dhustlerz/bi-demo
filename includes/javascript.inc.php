@@ -50,6 +50,7 @@ function javascriptLoad() {
     $output.='<script type="text/javascript" src="js/plugins/moment.min.js"></script>';
     $output.='<script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js"></script>';
     $output.='<script type="text/javascript" src="js/plugins/tagsinput/jquery.tagsinput.min.js"></script>';
+    $output.='<script type="text/javascript" src="js/plugins/clockwidget/KitKatClock.js"></script>';
     // $output.='<script type="text/javascript" src="js/plugins/markerclustererplus.js"></script>';
     // $output.='<script type="text/javascript" src="js/plugins/jquery-animateNumber.js"></script>';
     // $output.='<script type="text/javascript" src="js/plugins/gauge.js"></script>';

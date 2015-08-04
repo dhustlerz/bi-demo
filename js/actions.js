@@ -642,6 +642,46 @@ Object.size = function(obj) {
     return size;
 };
 
+
+/*
+ * Time Select Widget
+ * @Author : Jashanpreet
+ */
+
+//  $("document").ready(function() {
+//     setTimeout(function() {
+//        $("#timeSelectWidgetClock").trigger('click');
+//     },10);
+// });
+
+$(function() {
+$("#timeSelectWidgetClock").kitkatclock({
+//size:: // rendered width of the clock (default: 350px)
+//fontsize:: // font size used for everything but am/pm buttons (default: 40px)
+//fontFamily: // font family used for entire clock (default: 'Verdana, sans-serif')
+colors: { // object containing color settings for the clock
+  background:'red', // background of the entire selector element (default: #222222)
+  clock:'blue', // color of the body of the clock (default: #050505)
+  // text: // color of the text of the clock/controls (default: #FFFFFF)
+  // hand: // color of the hand of the clock (default: #960000)
+  // border: // border color of the selector (default: #CCCCCC)
+  // numerals: // color of the numerals on the clock (defaults to colors.text)
+  // meridian_background_on: // color of the am/pm buttons when selected (defaults to colors.hand)
+  // meridian_background_off: // color of the am/pm buttons when NOT selected (defaults to a value equivalent to colors.meridian_background_on with an alpha level of 0.6 on a background of colors.background)
+  // top_indicator_selected: // color of the indicator text when that section (i.e. minutes or hours) is active (defaults to colors.hand)
+  // top_indicator_deselected: // color of the indicator text when that section (i.e. minutes or hours) is NOT active (defaults to colors.text)
+  // top_indicator_background: // background color for the top indicator (defaults to colors.clock)
+}, } );
+//$(".kitkat-container").show();
+$( "#timeSelectWidgetClock" ).trigger( "click" );
+//$(".trigger").click(function(){ $("#timeSelectWidgetClock").kitkatclock("show"); });
+});
+
+/*
+ * Time Select Widget Clock ends
+ */
+
+
 // var morrisCharts = function() {
 //         Morris.Bar({
 //         element: 'morris-bar-example',
