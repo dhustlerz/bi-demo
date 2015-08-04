@@ -6,8 +6,16 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <!-- END META SECTION -->
         <!-- CSS INCLUDE -->
-         <link type="text/css" href="css/calender-date-picker/cangas.datepicker.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+        <link type="text/css" href="css/calender-date-picker/cangas.datepicker.css" rel="stylesheet">
+        <?php
+            $request_URI = "$_SERVER[REQUEST_URI]";
+           if ($request_URI == '/bi-demo/index.php?concept=1' || $request_URI == '/bi-demo/index.php' || $request_URI == '/bi-demo/'  ) {
+                echo '<link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>';
+             }
+             if ($request_URI == '/bi-demo/index.php?concept=2') {
+                echo'<link rel="stylesheet" type="text/css" id="theme" href="css/theme-default-C2.css"/>';
+             }
+        ?>
 
         <style>
 
