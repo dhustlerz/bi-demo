@@ -13,7 +13,7 @@
                 echo '<link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>';
              }
              if ($request_URI == '/bi-demo/index.php?concept=2') {
-                echo'<link rel="stylesheet" type="text/css" id="theme" href="css/theme-default-C2.css"/>';
+                echo'<link rel="stylesheet" type="text/css" id="theme" href="css/theme-default-c2.css"/>';
              }
         ?>
 
