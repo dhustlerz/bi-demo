@@ -81,7 +81,7 @@ function fakeSpeakerListWithImage(){
             for ($speakerCount=1; $speakerCount<=6; $speakerCount++){
               $output.='<tr><td >';
                 $output.='<div class="padding-left-20">';
-                  $output.='<span  style="font-size: 40px; " class="doctor-profile fa fa-user-md"></span>';
+                  $output.='<span  style="font-size: 30px; " class="doctor-profile fa fa-user-md"></span>';
                 $output.='</div>';
               $output.='</td><td><a href="#">Dr Full Name</a></td><td>Respirologist</td><td>Windsor ,ON</td><td><button type="button" class="actionClick btn btn-primary ">Select</i></button> </td></tr>';
               // <i class="fa fa-check">
@@ -100,7 +100,7 @@ function fakeSpeakerList(){
          $output.='<thead><tr><th style="width: 150px;">Sr No.</th><th>Speaker Name</th><th>Specialty</th><th style="width: 140px;"></th></tr></thead>';
           $output.='<tbody class="font-size-14">';
 
-            for ($speakerCount=1; $speakerCount<=10; $speakerCount++){
+            for ($speakerCount=1; $speakerCount<=9; $speakerCount++){
               $output.='<tr><td>'.$speakerCount.'</td><td><a href="#">Dr Full Name</a></td><td>Respirologist</td><td><button type="button" class="actionClick btn btn-primary ">Select</i></button> </td></tr>';
               // <i class="fa fa-check">
             }
@@ -118,7 +118,7 @@ function fakeProgramList() {
          $output.='<thead><tr><th></th><th>Program Name</th><th>Learning Objective</th><th>Program Type</th><th style="width: 140px;">Select</th></tr></thead>';
           $output.='<tbody class="font-size-14">';
 
-            for ($speakerCount=1; $speakerCount<=10; $speakerCount++){
+            for ($speakerCount=1; $speakerCount<=9; $speakerCount++){
               $output.='<tr><td><i class="fa fa-plus-circle font-size-24 padding-top-4"></i></td><td><a href="#">Program Name</a></td><td>Learning Objective</td><td>Program Type</td><td><button type="button" class="actionClick btn btn-primary ">Select</i></button> </td></tr>';
               // <i class="fa fa-check">
             }

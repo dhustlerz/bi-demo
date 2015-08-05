@@ -36,7 +36,6 @@ $output.='<div class="page-content-wrap ">';
     /**
      * START  Widgets 1
      */
-
      require_once 'includes/functions-html.php';
 
      $output.= scheduler_concept_2();

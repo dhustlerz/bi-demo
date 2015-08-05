@@ -402,6 +402,9 @@ border-color: #58626E;
 .min-heigth-140{
   min-height: 140px;
 }
+.min-heigth-500{
+  min-height: 500px;
+}
 
 /**
  * margin
@@ -409,8 +412,11 @@ border-color: #58626E;
 .margin-0 {
  margin: 0;
 }
-.margin-14 {
- margin: 14;
+.margin-6 {
+ margin: 6;
+}
+.margin-16 {
+ margin: 16;
 }
 .margin-left-pt-20 {
   margin-left: 20%;
@@ -610,7 +616,10 @@ border-color: #58626E;
   padding-top: 12px;
 }
 .padding-top-20 {
-  padding-top: 30px;
+  padding-top: 20px;
+}
+.padding-top-24 {
+  padding-top: 24px;
 }
 .padding-top-30 {
   padding-top: 30px;
