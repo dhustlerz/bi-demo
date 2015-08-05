@@ -1105,18 +1105,7 @@ body.page-container-boxed .page-container {
   animation-iteration-count: infinite;
 }
 .x-navigation .informer.informer-primary {
-  background:   background:
-
-
-#2D4255;
-  background:
-
-
-#2D4255;
-
-
-
-#2D4255;
+  background: #2D4255;
 }
 .x-navigation .informer.informer-success {
   background: #99DB3B;
@@ -2336,14 +2325,9 @@ ul.panel-controls > li > .dropdown-menu:before {
   border-color: #a7c479;
 }
 .btn-primary {
-  background-color:
+  background-color:#2D4255;
+  border-color: #2D4255;
 
-
-#2D4255;
-  background:
-
-
-#2D4255;
   border-radius: 0px;
 
 }
@@ -8502,10 +8486,7 @@ li.ext_zip {
   /*border-color: #F34662;*/
   /* width: 75px; */
   /*border-radius: 1px;*/
-  color:
-
-
-#2D4255;
+  color:#2D4255;
 }
 .action-btn-wizard-previous:hover, .action-btn-wizard-next:hover {
     color:
