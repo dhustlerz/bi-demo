@@ -101,6 +101,7 @@ body {
 .page-container .page-sidebar {
   width: 220px;
   float: left;
+  min-height: inherit;
   position: relative;
   z-index: 3;
 }

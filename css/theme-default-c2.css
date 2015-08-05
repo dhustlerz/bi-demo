@@ -102,10 +102,8 @@ body {
   /* END RTL CONTENT MODE */
 }
 .page-container .page-sidebar {
-  background-color:
-
-
-#2D4255;
+  background-color:#2D4255;
+  min-height: inherit;
   width: 220px;
   float: left;
   position: relative;
