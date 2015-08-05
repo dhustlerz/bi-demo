@@ -109,6 +109,7 @@ body {
 }
 .page-container.page-container-wide .page-sidebar {
   width: 50px;
+  min-height: inherit;
 }
 .page-container .page-content {
   min-height: 100%;
