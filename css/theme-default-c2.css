@@ -8484,13 +8484,10 @@ li.ext_zip {
   /*border-color: #F34662;*/
   /* width: 75px; */
   /*border-radius: 1px;*/
-  color:#2D4255;
+  color:#E93C4F;
 }
 .action-btn-wizard-previous:hover, .action-btn-wizard-next:hover {
-    color:
-
-
-#2D4255;
+    color:#E93C4F;
 }
 
 .btn-primary.changeColorTo99DB3B {
