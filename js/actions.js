@@ -264,7 +264,7 @@ jQuery(document).ready(function(){
 
     jQuery(".actionClick").on("click", function() {
 
-        jQuery(this).toggleClass("changeColorTo95B75D");
+        jQuery(this).toggleClass("select-table-list");
     // jQuery(this).css("background", "#F34662");
     // jQuery(this).css("border-color", "#F34662");
     })
