@@ -8731,24 +8731,18 @@ h5{
 }
 .swMain ul.anchor li a.done:hover {
   color:#fff;
-  background:
-
-
-#2D4255;
-  border: 1px solid
-
-
-#2D4255;
+  background:#2D4255;
+  border: 1px solid #2D4255;
 }
 .swMain ul.anchor li a.disabled {
   color:#fff;
-  background: #6E7B8B;
-  border: 1px solid #CCC;
+  background: #adbcc3;
+  border: 1px solid #adbcc3;
   cursor:text;
 }
 .swMain ul.anchor li a.disabled:hover {
   color:#fff;
-  background: #6E7B8B;
+  background: #adbcc3;
 }
 
 .swMain ul.anchor li a.error {
