@@ -1076,7 +1076,7 @@ return $output;
 function selectDateTimeProgram(){
 
 $output = '';
-$output.='<div class="container" style="height:auto; padding-left:10%; padding-right:10%;padding-bottom: 1%;" >';
+$output.='<div class="container" style="height:auto; padding-left:10%; padding-right:10%;padding-bottom: 3%;" >';
 
 
   $output.='<div class="col-md-6 col-xs-6">';
