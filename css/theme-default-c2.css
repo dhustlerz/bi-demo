@@ -2804,6 +2804,8 @@ label.valid {
 .dropdown-menu > li > a {
   padding: 8px 15px;
   border-bottom: 1px solid #E9E9E9;
+  color: #ffffff;
+  background-color: #2D4255;
   line-height: 20px;
 }
 .dropdown-menu > li:last-child > a {
