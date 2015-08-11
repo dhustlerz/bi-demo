@@ -587,7 +587,7 @@ $output.='<div class="container-fluid" style="margin-top:24px; height:auto; marg
     $output.='</div>';
 
   $output.='</div>';
-  $output.='<div class="col-md-6 col-xs-6 float-right" style="padding-left: 5%">';
+  $output.='<div class="col-md-6 col-xs-6 float-right" style="padding-left: 0%">';
     //Meeting Details Starts
     $output.='<div class="col-md-6">';
       //Select Time and Duration
@@ -595,24 +595,14 @@ $output.='<div class="container-fluid" style="margin-top:24px; height:auto; marg
       //$output.='<h4 class="font-size-18" style="padding-left: 40px; margin: 10px; margin-bottom: 20px; font-weight: 300;">Select Time and Duration</h4>';
         // Select Time
       $output.='<div class="row" >';
-        //$output.='<div class="col-md-4 col-xs-4 text-center">';
-        //$output='<input type="text" id="timeSelectWidgetClock">';
-        //   $output.='<div class="form-group">';
-        //   $output.='<label class="col-md-6 font-weight-400 font-size-16  control-label">Time:</label>';
-        //     $output.='<div class="col-md-6 ">';
-        //       // $output.='<div class="input-group">';
-        //           // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
-        //           $output.='<input readonly="true" id="timeSelectWidgetClock" type="text" class="form-control" data-kitkat-active="true"/>';
-        //       // $output.='</div>';
-        //   $output.='</div>';
-        // $output.='</div>';
 
           //$output.='<label  class="font-weight-400 font-size-16 control-label ">Start Time :</label>';
             //$output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:100px">Start Time </a>';
           //$output.='</div>';
           $output.='<div class="col-md-6 col-xs-6 padding-0">';
-            $output.='<a href="#"  data-toggle="dropdown" class=" btn btn-primary dropdown-toggle" style="">Start Time <span class="caret"></span></a>';
-            $output.= selectTime();
+            // $output.='<a href="#"  data-toggle="dropdown" class=" btn btn-primary dropdown-toggle" style="">Start Time <span class="caret"></span></a>';
+            // $output.= selectTime();
+            $output.='<input readonly="true" id="timeSelectWidgetClock" type="text" class="btn btn-primary" data-kitkat-active="true"/>';
           $output.='</div>';
           /*$output.='<div class="col-md-6 col-xs-6 padding-0">';
 
@@ -640,8 +630,8 @@ $output.='<div class="container-fluid" style="margin-top:24px; height:auto; marg
         // Select duration
         $output.='<div class="row" >';
 
-          $output.='<div class="col-md-6  ">';
-              $output.='<a href="#"  data-toggle="dropdown" class=" btn btn-primary dropdown-toggle" >Duration <span class="caret"></span></a>';
+          $output.='<div class="col-md-6 ">';
+              $output.='<a href="#" style="margin-left:70px;"  data-toggle="dropdown" class=" btn btn-primary dropdown-toggle" >Duration <span class="caret"></span></a>';
               $output.= selectDuration();
           $output.='</div>';
         $output.='</div>';
