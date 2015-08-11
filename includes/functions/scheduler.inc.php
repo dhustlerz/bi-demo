@@ -582,7 +582,7 @@ $output.='<div class="container-fluid" style="margin-top:24px; height:auto; marg
     $output.='</div>';
 
   $output.='</div>';
-  $output.='<div class="col-md-6 col-xs-6" style="padding-left: 9%;">';
+  $output.='<div class="col-md-6 col-xs-6 float-right" style="padding-left: 10%;">';
     //Meeting Details Starts
     $output.='<div class="col-md-6">';
       //Select Time and Duration
@@ -606,10 +606,10 @@ $output.='<div class="container-fluid" style="margin-top:24px; height:auto; marg
             //$output.='<a href="#"  data-toggle="dropdown" class="btn btn-primary dropdown-toggle" style="width:100px">Start Time </a>';
           //$output.='</div>';
           $output.='<div class="col-md-6 col-xs-6 padding-0">';
-            $output.='<a href="#"  data-toggle="dropdown" class="float-right btn btn-primary dropdown-toggle" style="">Start Time <span class="caret"></span></a>';
+            $output.='<a href="#"  data-toggle="dropdown" class=" btn btn-primary dropdown-toggle" style="">Start Time <span class="caret"></span></a>';
             $output.= selectTime();
           $output.='</div>';
-          $output.='<div class="col-md-6 col-xs-6 padding-0">';
+          /*$output.='<div class="col-md-6 col-xs-6 padding-0">';
 
           $output.='<a href="#" style="background-color: white;color: blue; border: 1px solid #d5d5d5;" data-toggle="dropdown" class="float-left btn btn-primary dropdown-toggle">AM</span></a>';
           $output.='<ul class="dropdown-menu" role="menu">';
@@ -617,7 +617,7 @@ $output.='<div class="container-fluid" style="margin-top:24px; height:auto; marg
             $output.='<li><a href="#">PM</a></li>';
           $output.='</ul>';
 
-          $output.='</div>';
+          $output.='</div>';*/
         $output.='</div>';
         // Select time Ends
 
