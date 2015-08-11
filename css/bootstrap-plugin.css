@@ -31,6 +31,8 @@
  */
  .bg-0076A3 {
   background-color: #0076A3;
+ }.bg-0076A3 {
+  background-color: #0076A3;
  }
  .bg-0D79CF {
   background-color: #0D79CF;
@@ -223,8 +225,12 @@ border-color: #58626E;
 }
 .color-fff {
   color: #fff;
-}.color-97C121 {
+}
+.color-97C121 {
   color: #97C121;
+}
+.color-2a2d2f {
+  color: #2a2d2f;
 }
 
 /**

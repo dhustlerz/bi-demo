@@ -78,7 +78,7 @@ $output='';
 
               //$output.= selectProgramEventScheduler();
 
-              $output.='<div class="padding-20 row" style="padding: 10px 10%;">';
+              $output.='<div class="padding-20 row" style="padding: 10px 5%">';
 
                   $output.='<div class="row">';
                     $output.='<div class="col-md-4 padding-0">';
@@ -121,7 +121,7 @@ $output='';
 
               $output.='<div class="row">';
                 $output.='<div class="padding-10 col-md-12 ">';
-                  $output.='<div class="row" style="border: 0px solid #F5F5F5; margin: 24px 10%;">';
+                  $output.='<div class="row" style="border: 0px solid #F5F5F5; margin: 14px 5%">';
 
                     $output.='<div class="row">';
                       $output.='<h4 class="font-size-18" style="   margin-bottom: 20px;  font-weight: 300;">3. Enter Date and Start Time</h4>';
@@ -129,7 +129,7 @@ $output='';
                     $output.='</div>';
 
                     $output.='<div class="row">';
-                      $output.='<h4 class="font-size-18" style="   margin-bottom: 20px;  font-weight: 300;">4. Invite Attendees</h4>';
+                      $output.='<h4 class="font-size-18" style="   margin-bottom: 10px;  font-weight: 300;">4. Invite Attendees</h4>';
                       $output.= inviteParticipantsEventScheduler();
                     $output.='</div>';
 
@@ -164,7 +164,7 @@ $output='';
 
               $output.='<div class="row">';
                 $output.='<div class="padding-10 col-md-12 ">';
-                  $output.='<div class="row" style="border: 0px solid #F5F5F5;  margin: 24px 10%;">';
+                  $output.='<div class="row" style="border: 0px solid #F5F5F5;  margin: 24px 5%">';
 
                       $output.='<h4 class="font-size-18" style="  margin: 10px 0px; margin-bottom: 20px; font-weight: 300;">5. Event Location Details</h4>';
                       $output.= selectLocationEventScheduler();
@@ -198,7 +198,7 @@ $output='';
 
               $output.='<div class="row">';
                 $output.='<div class="padding-10 col-md-12 ">';
-                  $output.='<div class=" min-heigth-500" style=" min-height: 520px;  margin: 24px 10%;">';
+                  $output.='<div class=" min-heigth-500" style=" min-height: 520px;  margin: 24px 5%">';
 
                     $output.= reviewAndSubmitEventScheduler();
                     $output.='<div class=" margin-bottom-24 col-md-6 col-xs-6"> <button  type="button" style="border-radius:0px;" class= "float-right btn btn-primary ">Submit</span></button> </div>';
@@ -312,9 +312,14 @@ $output='';
   $output.='<div class="form-group">';
     //$output.='<label class="col-md-2 col-xs-12 control-label">Postal Code*</label>';
     $output.='<div class="col-md-11 col-xs-12 margin-left-10">';
+
+      $output.='<div class="margin-bottom-10">';
+      $output.='<p class="font-size-10 color-2a2d2f margin-0  padding-0">Type the name of the person(s) you would like to invite in the box below/ Invite upto 15 colleagues.</p>';
+      $output.='<p class="font-size-10 color-2a2d2f margin-0  padding-0">Only the users with an active account are available to be selected. Invitations to your event will be sent once your event request has been accepted by the speaker</p>';
+      $output.='</div>';
       // $output.='<div class="input-group">';
           // $output.='<span class="input-group-addon"><span class="line-height-2 fa fa-location-arrow"></span></span>';
-          $output.='<input type="textarea" style="height:100px;" class="tagsinput form-control" value="Chris Dodd,Dong,Jp"/>';
+      $output.='<input type="textarea" class="tagsinput form-control " value="Chris Dodd,Dong,Jp"/>';
           //$output.='<input type="text" class="min-heigth-80 form-control"/>';
       // $output.='</div>';
       //$output.='<span class="help-block">Input attendee name and press ENTER</span>';
@@ -568,21 +573,21 @@ function selectProgramEventScheduler(){
 function selectDateTimeProgramEventScheduler(){
 
 $output = '';
-$output.='<div class="container-fluid" style="margin-top:24px; height:auto; margin-bottom: 24px;;" >';
+$output.='<div class="container-fluid" style="margin-top:24px; height:auto; margin-bottom: 24px;" >';
 
 
   $output.='<div class="col-md-6 col-sm-6 ">';
 
     // Date Calender Select
     //$output.='<h4 class="font-size-18" style="margin: 10px; margin-bottom: 20px; font-weight: 300;">Select Date</h4>';
-    $output.='<div class="row" style="width:100%;">';
+    $output.='<div class="" style="width:80%;">';
       $output.='<div class="row" style="border:2px solid #F5F5F5;">';
         $output.='<div id="" class="datepicker ll-skin-melon "></div>';
       $output.='</div>';
     $output.='</div>';
 
   $output.='</div>';
-  $output.='<div class="col-md-6 col-xs-6 float-right" style="padding-left: 10%;">';
+  $output.='<div class="col-md-6 col-xs-6 float-right" style="padding-left: 5%">';
     //Meeting Details Starts
     $output.='<div class="col-md-6">';
       //Select Time and Duration
