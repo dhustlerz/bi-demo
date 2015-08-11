@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
 .kitkat-container{
 	width: 220px;
-	height: 285px;
+	height: 280px;
 	background-color: #fff;
 	font-family: "Source Sans Pro";
 	color: #2A2D2F;
@@ -35,8 +35,8 @@
 	cursor:pointer;
 }
 .kitkat-done{
-
-	height: calc(10% - 1px);
+	margin-top: 5px;
+	height: calc(10% + 3px);
 	border-top:1px solid #CCC;
 	color: #fff;
 	background-color: #007AFF;
@@ -81,8 +81,8 @@
 .kitkat-clock-hand-line{
 	position:absolute;
 	top:24pt; left:calc(50% - 2px);
-	width:4px; height:calc(50% - 24pt);
-	background-color: #ffffff;
+	width:2px; height:calc(50% - 24pt);
+	background-color: #007AFF;
 }
 .kitkat-clock-hand-end{
 	position:absolute;
