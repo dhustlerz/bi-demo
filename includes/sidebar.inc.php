@@ -32,7 +32,7 @@ $sidebar_output.='<div class="page-sidebar bg-ffffff" style="height: 50px;">';
               //     $sidebar_output.='<img style="width: 60px;" src="assets/images/users/user0.png" alt="Chris Dodd"/>';
               // $sidebar_output.='</div>';
               $sidebar_output.='<div class="profile-data">';
-                  $sidebar_output.='<div class="profile-data-name"><span>Chris Dodd</span><a href="#" class="mb-control padding-left-12 " data-box="#mb-signout"><span class="fa fa-gear"></span></a></div>';
+                  $sidebar_output.='<div class="profile-data-name"><span>Home</span><a href="#" class="mb-control padding-left-12 " data-box="#mb-signout"></a></div>';
                   //$sidebar_output.='<div class="profile-data-title">Administrator</div>';
               $sidebar_output.='</div>';
               // $sidebar_output.='<div class="profile-controls">';
@@ -46,7 +46,7 @@ $sidebar_output.='<div class="page-sidebar bg-ffffff" style="height: 50px;">';
          */
 
         //$sidebar_output.='<li class="xn-title">Navigation</li>';
-        $sidebar_output.='<li class="menu active xn-openable ">';
+        $sidebar_output.='<li class="menu active text-center">';
             $sidebar_output.='<a href="index.php"><span class="fa fa-clock-o"></span><span class="xn-text">Scheduler</span></a>';
 
               // $sidebar_output.='<ul>';
@@ -56,24 +56,25 @@ $sidebar_output.='<div class="page-sidebar bg-ffffff" style="height: 50px;">';
 
         $sidebar_output.='</li>';
 
-        $sidebar_output.='<li class="menu ">';
-          $sidebar_output.='<a href="#"><span class="fa fa-calendar"></span><span class="xn-text">Calendar</span></a>';
+        $sidebar_output.='<li class="menu text-center">';
+
+          $sidebar_output.='<a href="#"><span class="fa fa-calendar text"></span><span class="xn-text">Calendar</span></a>';
         $sidebar_output.='</li>';
 
-        $sidebar_output.='<li class="menu">';
+        $sidebar_output.='<li class="menu text-center">';
           $sidebar_output.='<a href="#"><span class="fa  fa-user"></span><span class="xn-text">Speakers</span></a>';
         $sidebar_output.='</li>';
 
 
-        $sidebar_output.='<li class="">';
+        $sidebar_output.='<li class="text-center">';
           $sidebar_output.='<a href="#"><span class="fa fa-bar-chart-o"></span><span class="xn-text">Activity log</span></a>';
         $sidebar_output.='</li>';
 
-        $sidebar_output.='<li class="">';
+        $sidebar_output.='<li class="text-center">';
           $sidebar_output.='<a href="#"><span class="fa fa-users"></span><span class="xn-text">Adobe Connect </span></a>';
         $sidebar_output.='</li>';
 
-        $sidebar_output.='<li>';
+        $sidebar_output.='<li class="text-center">';
             $sidebar_output.='<a href="#"><span class="fa fa-map-marker"></span><span class="xn-text">Support</span></a>';
         $sidebar_output.='</li>';
 

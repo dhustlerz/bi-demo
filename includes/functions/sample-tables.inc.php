@@ -97,11 +97,11 @@ function fakeSpeakerList(){
   $output='';
     $output.='<div class="row ">';
       $output.='<table class="table datatable dataTable no-footer">';
-         $output.='<thead><tr><th style="width: 150px;">Sr No.</th><th>Speaker Name</th><th>Specialty</th><th style="width: 140px;"></th></tr></thead>';
+         $output.='<thead><tr><th style="width: 70px;"></th><th>Speaker Name</th><th>Specialty</th><th>Location</th><th style="width: 140px;"></th></tr></thead>';
           $output.='<tbody class="font-size-14">';
 
-            for ($speakerCount=1; $speakerCount<=9; $speakerCount++){
-              $output.='<tr><td>'.$speakerCount.'</td><td><a href="#">Dr Full Name</a></td><td>Respirologist</td><td><button type="button" class="actionClick btn btn-primary ">Select</i></button> </td></tr>';
+            for ($speakerCount=1; $speakerCount<=6; $speakerCount++){
+              $output.='<tr><td></td><td><a href="#" style="text-decoration: underline;">Dr Full Name</a></td><td>Respirologist</td><td>Windsor,ON</td><td><span type="button" class="actionClick color-97C121 font-size-16" style="cursor: pointer;">Select</i></span> </td></tr>';
               // <i class="fa fa-check">
             }
           $output.='</tbody>';

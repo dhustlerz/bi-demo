@@ -13,8 +13,11 @@
            if ($request_URI == '/bi-demo/index.php?concept=1' || $request_URI == '/bi-demo/index.php' || $request_URI == '/bi-demo/'  ) {
                 echo '<link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>';
              }
-             if ($request_URI == '/bi-demo/index.php?concept=2') {
+             elseif ($request_URI == '/bi-demo/index.php?concept=2') {
                 echo'<link rel="stylesheet" type="text/css" id="theme" href="css/theme-default-c2.css"/>';
+             }
+             elseif ($request_URI == '/bi-demo/index.php?concept=3') {
+                echo'<link rel="stylesheet" type="text/css" id="theme" href="css/theme-default-c3.css"/>';
              }
         ?>
 

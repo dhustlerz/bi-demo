@@ -1,7 +1,7 @@
 <?php
 
-require_once 'includes/functions-html.php';
-require_once 'sample-tables.inc.php';
+require_once 'includes/functions/functions-html.php';
+require_once 'includes/functions/sample-tables.inc.php';
 
 
 $output = '';
@@ -37,7 +37,7 @@ $output.='<div class="page-content-wrap ">';
      * START  Widgets 1
      */
 
-     require_once 'includes/functions-html.php';
+     require_once 'includes/functions/functions-html.php';
 
      $output.= scheduler_concept_1();
 

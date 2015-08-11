@@ -1,9 +1,10 @@
 <?php
 
-require_once 'includes/functions-html.php';
-require_once 'sample-tables.inc.php';
+require_once 'includes/functions/functions-html.php';
+require_once 'includes/functions/sample-tables.inc.php';
+require_once 'includes/functions/scheduler.inc.php';
 
-
+$request_URI = "$_SERVER[REQUEST_URI]";
 $output = '';
 
    /**
@@ -36,9 +37,20 @@ $output.='<div class="page-content-wrap ">';
     /**
      * START  Widgets 1
      */
-     require_once 'includes/functions-html.php';
 
-     $output.= scheduler_concept_2();
+    if ($request_URI == '/bi-demo/index.php?concept=1' || $request_URI == '/bi-demo/index.php' || $request_URI == '/bi-demo/'  ) {
+            $output.= scheduler_concept_1();
+     }
+
+     if ($request_URI == '/bi-demo/index.php?concept=2') {
+        $output.= scheduler_concept_2();
+
+     }
+     if ($request_URI == '/bi-demo/index.php?concept=3') {
+        $output.= event_scheduler();
+
+
+     }
 
     /**
      * END  Widgets 1
